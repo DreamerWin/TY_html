@@ -1,0 +1,14 @@
+/*登陆页*/
+.login .user{margin-top:26px;}
+.login .user span{background:url(../img/landingUser.png) 6px center no-repeat;background-size:18px 14px;}
+.login .password{margin-top:15px;}
+.login .password span{background:url(../img/landingPassword.png) 6px center no-repeat;background-size:18px 14px;}
+.login .ditto{margin-top:15px;}
+.login .ditto span{ background:#fff;}
+.login .user span, .landing .password span ,.landing .ditto span{padding: 0 15px;border-radius:2px 0 0 2px;}
+.login .user input, .landing .password input , .landing .ditto input{height:35px;padding-left:0; box-shadow:none;border:1px solid #cdcdcd;border-left:none;border-radius:0 2px 2px 0;}
+.login .unlearn{margin-top:6px;text-align:right;}
+.login .unlearn a{}
+.login .nav{margin-top:20px;}
+.login .nav .btn{background:#f75457;color:#fff;border-radius:0;padding:10px;}
+
