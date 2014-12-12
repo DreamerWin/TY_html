@@ -8,15 +8,109 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
 	
-	<script src="style/js/bootstrap.min.js"></script>
-	<script src="style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap-theme.min.css" />
-	<link rel="stylesheet" type="text/css" href="style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/order_detail.css" />
 </head>
 
 <body>
 <!-- 核对订单 -->
-
+<div class="container-fluid">
+	<div class="header row">
+		<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>核对订单</span>
+		</div>
+	</div>
+	<div class="orderDetail row">
+		<div class="title">
+			<span>商品信息</span>
+		</div>
+		<div class="cont">
+			<div class="top">
+				<div class="photo">
+					<img src="../style/img/1.jpg"/>
+				</div>
+				<div class="detail">
+					<div class="name">
+						<span>[合约机]iphone 5S 32G版 电信LTD4G版手机</span>
+					</div>
+					<div class="norms">
+						<span>银色 16G</span>
+					</div>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div>合约套餐：<span>199元/月、36个合约期</span></div>
+				</li>
+				<li>
+					<div>已选号码：<span>18122299395</span></div>
+				</li>
+				<li>
+					<div class="num">
+						<div>月供金额：</div>
+						<span><b>￥120.28 × 24期</b>(0利息0手续费)</span>
+					</div>
+				</li>
+				<li>
+					<div class="num">
+						<div>分期总额：</div>
+						<span><b>￥3988</b>(含购机价￥1299,含全额话费￥2688)</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="title">
+			<span>收货信息</span>
+		</div>
+		<div class="cont">
+			<ul>
+				<li>
+					<div>收货人：<span>钱小二</span></div>
+				</li>
+				<li>
+					<div>手机号码：<span>18122299239</span></div>
+				</li>
+				<li>
+					<div class="num">
+						<div>收货地址：</div>
+						<span>广州市是呢嘛什么什么什么城市什么么街道</span>
+					</div>
+				</li>
+				<li>
+					<div>推荐人工号：<span>000988</span></div>
+				</li>
+			</ul>
+		</div>
+		<div class="title">
+			<span>发票信息</span>
+		</div>
+		<div class="cont">
+			<ul>
+				<li>
+					<div class="num">
+						<div>发票抬头：</div>
+						<span>个人</span>
+					</div>
+				</li>
+				<li>
+					<div class="num">
+						<div>发票内容：</div>
+						<span>广州市是呢嘛什么什么什么城市什么么街道</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="contNav">
+			<button type="button" class="btn btn-block">
+				<span>去支付</span>
+			</button>
+		</div>
+	</div>
+</div>
 </body>
