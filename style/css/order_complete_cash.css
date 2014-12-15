@@ -1,0 +1,19 @@
+/*选择支付方式*/
+body{background: #eee;}
+.orderComplete{padding-bottom:30px;}
+.orderComplete .orderCont{background:#fff; border:1px solid #d5d5d5;margin:3px 3px 0;border-radius:2px;}
+.orderComplete .orderCont ul{margin:0 10px; border-bottom:1px dashed #ebeff5;}
+.orderComplete .orderCont ul li{min-height:34px;padding:8px 0; border-top:1px solid #ebeff5;}
+.orderComplete .orderCont ul li div{font-size:13px;color:#595959;}
+.orderComplete .orderCont ul li div span{font-size:11px;color:#838383;}
+.orderComplete .orderCont ul li div span b{font-size:12px;color:#f65456;}
+.orderComplete .orderCont ul li .info{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.orderComplete .orderCont ul li .num{position:relative;font-family:arial;}
+.orderComplete .orderCont ul li .num div{position:absolute;}
+.orderComplete .orderCont ul li .num span{padding-left:65px;display:block;}
+.orderComplete .orderCont .orderPrompt .text{padding-left:21px;margin:18px 8px 14px; background:url(../img/orderComplete_success.png) left 2px no-repeat;background-size:15px;}
+.orderComplete .orderCont .orderPrompt .text span{font-size:14px;color:#378bff;}
+.orderComplete .orderCont .contNav{margin:14px 0 25px 0; position:relative;}
+.orderComplete .orderCont .contNav button{width:46%;margin:0 7px;border:1px solid #e5e5e5;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), color-stop(1, #eeeeee));}
+.orderComplete .orderCont .contNav button:nth-child(2){position:absolute;right:0;top:0;}
+.orderComplete .orderCont .contNav button span{font-size:14px; color:#595959;}

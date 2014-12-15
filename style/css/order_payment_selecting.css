@@ -1,0 +1,58 @@
+/*选择支付方式*/
+body{background: #eee;}
+.orderPaymentSelecting{padding-bottom:30px;}
+.orderPaymentSelecting .orderCont{background:#fff; border:1px solid #d5d5d5;margin:3px 3px 0;border-radius:2px;}
+.orderPaymentSelecting .orderCont ul{margin:0 10px;}
+.orderPaymentSelecting .orderCont ul li{min-height:34px;padding:8px 0; border-top:1px solid #ebeff5;}
+.orderPaymentSelecting .orderCont ul li div{font-size:13px;color:#595959;}
+.orderPaymentSelecting .orderCont ul li div span{font-size:11px;color:#838383;}
+.orderPaymentSelecting .orderCont ul li div span b{font-size:12px;color:#f65456;}
+.orderPaymentSelecting .orderCont ul li .num{position:relative;font-family:arial;}
+.orderPaymentSelecting .orderCont ul li .num div{position:absolute;}
+.orderPaymentSelecting .orderCont ul li .num span{padding-left:65px;display:block;}
+.orderPaymentSelecting .orderCont .orderPrompt .text{padding-left:18px;margin:18px 8px 0; background:url(../img/orderPrompt_success.png) left 2px no-repeat;background-size:15px;}
+.orderPaymentSelecting .orderCont .orderPrompt .text span{font-size:15px;color:#050505;}
+.orderPaymentSelecting .orderCont .orderPrompt .norms{margin:10px 9px 13px;}
+.orderPaymentSelecting .orderCont .orderPrompt .norms span{font-size:11px;color:#838383;}
+.orderPaymentSelecting .orderCont .orderPrompt .norms span b{color:#f65456;}
+.orderPaymentSelecting .title{padding:18px 0 3px 14px;}
+.orderPaymentSelecting .title span{font-size:13px;color:#595959;}
+.orderPaymentSelecting .paymentSelecting{background:#fff; border:1px solid #d5d5d5;margin:3px 3px 0;border-radius:2px;}
+.orderPaymentSelecting .paymentSelecting>ul>li{min-height:34px; border-top:1px solid #ebeff5;position:relative;margin:0;}
+.orderPaymentSelecting .paymentSelecting>ul>li:first-child{border-top:none;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting{margin: 0 30px 0 8px;padding:13px 0;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting label{min-height:0px;padding-left:26px;background:url(../img/payment_radio.png) left center no-repeat;background-size:16px;line-height: 20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting .checked{background:url(../img/payment_radio2.png) left center no-repeat;background-size:16px;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting div{padding-left:28px;font-size:13px;color:#595959;line-height: 22px;height: 20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting div span{font-size:11px; color:#797979;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting .icon_credit{background:url(../img/icon_credit.png) left center no-repeat;background-size:20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting .icon_noCredit{background:url(../img/icon_noCredit.png) left center no-repeat;background-size:20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting .icon_unionpay{background:url(../img/icon_unionpay.png) left center no-repeat;background-size:20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li .selecting .icon_arrive{background:url(../img/icon_arrive.png) left center no-repeat;background-size:20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li .tArrow{height:46px;width:30px; position:absolute;right:0;top:0;background:url(../img/payment_bArrow.png)center no-repeat;background-size:9px 5px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul{border-top:1px solid #ebeff5;background:#fbfbfb;display:none;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li{border-top:1px solid #ebeff5;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li:first-child{border-top:none;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li>div{min-height:37px;margin-left:10px;margin-right:30px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .CGB{background:url(../img/CGB.png) left center no-repeat;background-size:88px 16px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .CMB{background:url(../img/CMB.png) left center no-repeat;background-size:67px 16px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .BOC{background:url(../img/BOC.png) left center no-repeat;background-size:56px 16px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .ABC{background:url(../img/ABC.png) left center no-repeat;background-size:75px 16px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .ICBC{background:url(../img/ICBC.png) left center no-repeat;background-size:79px 16px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .CCB{background:url(../img/CCB.png) left center no-repeat;background-size:72px 16px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .CUP{background:url(../img/CUP.png) left center no-repeat;background-size:75px 20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .noCredit{padding-left:120px; background:url(../img/noCredit.png) left 8px no-repeat;background-size:107px 20px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul> .checked{background:url(../img/payment_checked.png) right 10px top 13px no-repeat;background-size:12px 9px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .noCredit span{font-size:11px; color:#797979;display:block;padding-top:10px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .stages{position:relative;padding-left:100px;margin-top:8px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .stages>span{position:absolute;left: 0;top:7px;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .stages>div{display:inline-block; margin:0 10px 10px 0; line-height:30px;width:72px;text-align:center;border:1px solid #a4a4a4;border-radius:2px;font-size:14px;color:#595959;}
+.orderPaymentSelecting .paymentSelecting>ul>li>ul>li .stages .checked{background:url(../img/stages_checked.png) right bottom no-repeat;background-size:12px;border-color:#378bff;}
+.orderPaymentSelecting .contNav{margin-top:16px;background:#fff; border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;position:relative;}
+.orderPaymentSelecting .contNav .btn{ width:53%; margin:10px 10px 10px auto; background:#d1d1d1;border-radius:0;padding:8px;border-radius:3px;}
+.orderPaymentSelecting .contNav .btn span{color:#fff; font-size: 18px;}
+.orderPaymentSelecting .contNav .text{position:absolute;top:10px;left:10px;font-family:arial;}
+.orderPaymentSelecting .contNav .text .num>span{font-size:13px; color:#050507;}
+.orderPaymentSelecting .contNav .text .num>span>b{font-size:17px;color:#f65456;}
+.orderPaymentSelecting .contNav .text .num>span>span{font-size:12px; color:#f65456;}
+.orderPaymentSelecting .contNav .text .norms>span{font-size:12px; color:#858585;}
