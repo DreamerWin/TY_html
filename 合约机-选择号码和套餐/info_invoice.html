@@ -1,0 +1,101 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/icheck/icheck.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/js/icheck/flat/blue.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/info.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+	<!-- 头部 -->
+	<div class="row header">
+	 	<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>填写发票信息</span>
+	 	</div>
+	</div>
+	<!-- 内容部分 -->
+	<div class="row">
+		<div class="info">
+		<form class="form-horizontal" role="form">
+			
+			<!-- 发票信息展开 -->
+			<div class="invoice">
+				<ul>
+					<li class="li_cnt">
+						<div class="row">
+							<div class="col-xs-10">请填写发票信息</div>
+							<div class="col-xs-2"><img src="../style/img/arrows_show.png" width="15" height="10"></div>
+						</div>
+					</li>
+					<li class="li_cnt invoice_name">发票抬头</li>
+					<div class="invoice_name_list">
+						<li class="li_cnt">
+							<div class="row form-group">
+								<div class="col-xs-1"><input type="radio" name="invoice_name" checked></div>
+								<div class="col-xs-3">单位</div>
+								<div class="col-xs-7" style="margin-top:-8px;padding-left:0;"><input type="text" class="form-control" id="inputEmail3" placeholder="请输入单位名称"></div>
+							</div>
+						</li>
+						<li class="li_cnt">
+							<div class="row form-group">
+								<div class="col-xs-1"><input type="radio" name="invoice_name"></div>
+								<div class="col-xs-3">个人</div>
+							</div>
+						</li>
+					</div>
+					<li class="li_cnt invoice_cnt">发票内容</li>
+					<div class="invoice_cnt_list">
+						<li class="li_cnt">
+							<div class="row form-group">
+								<div class="col-xs-1"><input type="radio" name="invoice_cnt"></div>
+								<div class="col-xs-3">电脑配件</div>
+							</div>
+						</li>
+						<li class="li_cnt">
+							<div class="row form-group">
+								<div class="col-xs-1"><input type="radio" name="invoice_cnt" checked></div>
+								<div class="col-xs-3">办公用品</div>
+							</div>
+						</li>
+						<li class="li_cnt">
+							<div class="row form-group">
+								<div class="col-xs-1"><input type="radio" name="invoice_cnt"></div>
+								<div class="col-xs-3">明细</div>
+							</div>
+						</li>
+					</div>
+				</ul>
+			</div>
+			<button type="button" class="btn btn-info">确认</button>
+		</form>	
+		</div>
+	</div>
+	
+</div>
+
+<!-- JS部分 -->
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-blue',
+    radioClass: 'iradio_flat-blue'
+  });
+});
+</script>
+</body>
+</html>

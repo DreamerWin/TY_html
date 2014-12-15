@@ -1,0 +1,93 @@
+body{
+	background: #eeeeee;
+}
+.info{
+	margin-top: 10px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.info .address,.info .invoice,.info .add_address_til,.info .address_list,.info .recommend,.info .add_address{
+	background: #fff;
+	border: 1px solid #c4c4c4;
+}
+.info .invoice,.info .recommend,.info .add_address{
+	border-bottom: none;
+}
+.info ul li{
+	border-bottom: 1px solid #c4c4c4;
+
+}
+.info ul li{
+	border-bottom: 1px solid #c4c4c4;
+}
+.info .btn{
+	background: #f65456 !important;
+	border: none;
+}
+.info a{
+	color: #575757;
+}
+
+/* 地址部分 */
+.info .address ul li .fill_til{
+	color: #5a5a5a;
+}
+.info .address ul li .fill_til_desc{
+	color: #838383;
+	font-size: 12px;
+}
+.info .address .fill_content{
+	background: #fbfbfb;
+}
+.info .address .fill_content label{
+	color: #b0aeae;
+}
+.info .form-horizontal label{
+	width: 25%;
+}
+.info .form-horizontal .cnt{
+	width: 75%;
+}
+.info .form-group select{
+	margin-top: 8px;
+}
+
+/* 发票部分 */
+.invoice{
+	margin-top: 13px;
+}
+.invoice_name{
+	background: #fbfbfb;
+	color: #595959;
+}
+.invoice_cnt{
+	background: #eeeeee;
+	color: #595959;
+}
+.invoice .form-group div{
+	padding-left:0; 
+}
+
+/*选择地址*/
+.info .add_address_til{
+	margin-bottom: 8px;
+}
+.info .address_list{
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+.info .address_list .set_default{
+	padding-left: 16px;
+	padding-right: 8px;
+	padding-top: 4px;
+	padding-bottom: 1px;
+	font-size: 14px;
+	text-align: right;
+}
+.info .address_list .edit_btn div{
+	text-align: center;
+	margin-top: 2px;
+	height: 38px;
+	line-height: 38px;
+	border-top:1px solid #e8e9f1
+}

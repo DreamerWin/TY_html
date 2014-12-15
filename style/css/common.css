@@ -33,4 +33,63 @@ a{text-decoration:none;color:#333,display: inline-block;
 .sideNav ul .subfolder ul li a:hover,.sideNav ul .subfolder ul li a:focus{text-decoration:none;}
 .sideNav ul .subfolder ul li:focus,.sideNav ul .subfolder ul li:hover{background:none;}
 
+/* 表格样式覆盖 */
+.form-control{
+	padding-left: 0;
+	padding-right: 0;
+}
+.form-control:focus{
+	border: none;
+	box-shadow:none;
+	-webkit-box-shadow:none;
+}
+.form-group{
+	margin: 0 !important;
+}
+.form-group label{
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-top:8px;
+	font-weight: normal;
+	font-size: 14px;
+}
+.form-group input{
+	border: none;
+	background: none;
+	outline: none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.form-group select{
+	background: none;
+	border: none;
+	width: 100%;
+	outline: none;
+}
+.form-group .cnt{
+	padding: 0 !important;
+}
+
+/* ul li 列表 样式*/
+.li_cnt{
+	padding-left: 16px;
+	padding-right: 8px;
+	padding-top: 14px;
+	padding-bottom: 14px;
+	font-size: 14px;
+}
+.list_gray{
+	color: #838383;
+}
+.list_back{
+	color: #3d3d3d;
+}
+
+/*按钮样式*/
+.btn{
+	margin-top: 25px;
+	margin-bottom: 25px;
+	width: 100%;
+}
+
 
