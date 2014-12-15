@@ -7,15 +7,25 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
-	
-	<script src="../style/js/bootstrap.min.js"></script>
 	<script src="../style/js/jquery-1.11.1.min.js"></script>
-	
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/jquery.sliderPro.min.js"></script>
+
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/product_detail.css" />
-	
+	<script type="text/javascript">
+		$( document ).ready(function( $ ) {
+			$( '#datouwang' ).sliderPro({
+				width: '100%',
+				height:'700',
+				aspectRatio: 1.5,
+				visibleSize: '100%',
+				forceSize: 'fullWidth',
+			});
+		});
+	</script>
 </head>
 
 <body>
@@ -30,30 +40,37 @@
 	</div>
 	<div class="productDetail">
 		<div class="tabNav row">
-			<div class="col-xs-3 btn btn-link">
+			<div class="col-xs-3 btn-link">
 				<span>基本信息</span>
 			</div>
-			<div class="col-xs-3 btn btn-link">
+			<div class="col-xs-3 btn-link">
 				<span>合约套餐</span>
 			</div>
-			<div class="col-xs-3 btn btn-link">
+			<div class="col-xs-3 btn-link">
 				<span>图文介绍</span>
 			</div>
-			<div class="col-xs-3 btn btn-link">
+			<div class="col-xs-3 btn-link">
 				<span>评价</span>
 			</div>
 		</div>
 		<div class="productCont row">
-			<div class="tabBanner">
-				<div class="banner">
-					<ul>
-						<li><img src="../style/img/b.png"/></li>
-					</ul>
-				</div>
-				<div class="nav">
-					<ul>
-						<li></li>
-					</ul>
+			<div id="datouwang" class="slider-pro">
+				<div class="sp-slides">
+					<div class="sp-slide">
+						<img class="sp-image" src="../style/img/b.png"/>
+					</div>
+					<div class="sp-slide">
+						<img class="sp-image" src="../style/img/b.png"/>
+					</div>
+					<div class="sp-slide">
+						<img class="sp-image" src="../style/img/b.png"/>
+					</div>
+					<div class="sp-slide">
+						<img class="sp-image" src="../style/img/b.png"/>
+					</div>
+					<div class="sp-slide">
+			    		<img class="sp-image" src="../style/img/b.png"/>
+					</div>
 				</div>
 			</div>
 			<div class="productText">
@@ -70,45 +87,82 @@
 			</div>
 		</div>
 		<div class="productInfo row">
-				<ul>
-					<li>
-						<div class="stages">
-							<span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
-							<div class="address">湖南省</div>
-							<div class="address">衡阳市</div>
+			<ul>
+				<li>
+					<div class="stages">
+						<span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+						<div class="address">
+							<i></i>
+							<div class="form-group">
+							  	<select name="province" id="inputEmail3">
+									<option>广东省</option>
+									<option>湖南省</option>
+									<option>江西省</option>
+								</select>
+						 	</div>
 						</div>
-					</li>
-					<li>
-						<div class="stages">
-							<span>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span>
-							<div class="select">16G</div>
-							<div class="select">32G</div>
+						<div class="address">
+							<i></i>
+							<div class="form-group">
+							  	<select name="province" id="inputEmail3">
+									<option>广东省</option>
+									<option>湖南省省</option>
+									<option>江西省</option>
+								</select>
+						 	</div>
 						</div>
-					</li>
-					<li>
-						<div class="stages">
-							<span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
-							<div class="select">白</div>
-							<div class="select">黑</div>
+						<div class="stock">
+							<span>有货</span>
 						</div>
-					</li>
-					<li>
-						<div class="stages">
-							<span>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</span>
-							<div class="add">-</div>
-							<div class="num">1</div>
-							<div class="subtract">+</div>
-						</div>
-					</li>
-					<li>
-						<div class="stages">
-							<span>分期期数：</span>
-							<div class="select">24期</div>
-							<div class="select">36期</div>
-						</div>
-					</li>
-				</ul>
+					</div>
+				</li>
+				<li>
+					<div class="stages">
+						<span>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span>
+						<div class="select">16G</div>
+						<div class="select">32G</div>
+					</div>
+				</li>
+				<li>
+					<div class="stages">
+						<span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+						<div class="select">白</div>
+						<div class="select">黑</div>
+					</div>
+				</li>
+				<li>
+					<div class="stages">
+						<span>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</span>
+						<div class="subtract">-</div>
+						<div id="num" class="num">1</div>
+						<div class="add">+</div>
+					</div>
+				</li>
+				<li>
+					<div class="stages">
+						<span>分期期数：</span>
+						<div class="select">24期</div>
+						<div class="select">36期</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="noCredit row">
+			<div class="title">
+				<span>无信用卡分期</span>
 			</div>
+			<div class="toggle">
+				<span>额度不够？无信用卡？</span>
+				<span>凭身份证+工作证/学生证，即可轻松快速办理分期</span>
+			</div>
+			<div id="arrows" class="arrowsHide"></div>
+		</div>
+		<div class="contNav row">
+			<div class="collect"></div>
+			<button type="button" class="btn btn-block">
+				<span>选择套餐和号码</span>
+			</button>
+		</div>
 	</div>
 </div>
 <script type="text/javascript">
@@ -116,6 +170,21 @@
 		$('.select').bind('click',function(){
 			$(this).addClass('checked').siblings().removeClass('checked');
 		});
+		var num=$('#num').text();
+		$('.add').bind('click',function(){
+			num++;
+			$('#num').text(num);
+		});
+		$('.subtract').bind('click',function(){
+			if(num>1)
+			num--;
+			$('#num').text(num);
+		});
+		$('.noCredit').bind('click',function(){
+			$('.toggle').toggle();
+			$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
+		});
+
   	});
 </script>
 </body>

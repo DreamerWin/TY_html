@@ -1,0 +1,7 @@
+/* ´úÂëÕûÀí£º´óÍ·Íø www.datouwang.com */
+.slider-pro {position:relative;	margin:0 auto;}
+.sp-mask {	position:relative;	overflow:hidden;padding-top: 20px;height:245px !important;}
+.sp-slide {	position:absolute;}
+.sp-buttons {	position:relative;	width:100%;	text-align:center;}
+.sp-button {width:6px;	height:6px;	border-radius:50%;	margin:4px;	display:inline-block;	cursor:pointer;	background-color:#dcd8d9;}
+.sp-selected-button {background-color:#398dfe;}

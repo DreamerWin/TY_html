@@ -1,6 +1,6 @@
 /*分类*/
 .category .tabNav{height:40px;border-bottom:1px solid #cbcbcb; background:#f5f5f5;}
-.category .tabNav .btn-link{color:#838383;height:40px;padding: 8px 0;}
+.category .tabNav .btn-link{color:#838383;height:40px;padding: 8px 0;text-align: center;}
 .category .tabNav .btn-link span{font-size:14px;}
 .category .btn-link:hover, .category .btn-link:focus{color:#f45456;text-decoration:none;border-bottom:2px solid #f45456;}
 .category .private ul{margin-top:8px;}

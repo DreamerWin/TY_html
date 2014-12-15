@@ -74,8 +74,8 @@ a{text-decoration:none;color:#333,display: inline-block;
 .li_cnt{
 	padding-left: 16px;
 	padding-right: 8px;
-	padding-top: 14px;
-	padding-bottom: 14px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 	font-size: 14px;
 }
 .list_gray{
@@ -93,3 +93,6 @@ a{text-decoration:none;color:#333,display: inline-block;
 }
 
 
+/*上下箭头 另外给高度和宽度 父辈加position:relative;*/
+.arrowsHide{background:url(../img/arrows_hide.png) center no-repeat;background-size:15px 10px;position:absolute;right: 0;top: 0;height:100%;width:40px;}
+.arrowsShow{background:url(../img/arrows_show.png) center no-repeat;background-size:15px 10px;position:absolute;right: 0;top: 0;height:100%;width:40px;}
