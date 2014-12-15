@@ -8,15 +8,114 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
 	
-	<script src="style/js/bootstrap.min.js"></script>
-	<script src="style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap-theme.min.css" />
-	<link rel="stylesheet" type="text/css" href="style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/product_detail.css" />
+	
 </head>
 
 <body>
 <!-- 产品详情页面 -->
-
+<div class="container-fluid">
+	<div class="header row">
+		<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>商品分类</span>
+		</div>
+		<div class="col-xs-3 rightNav"></div>
+	</div>
+	<div class="productDetail">
+		<div class="tabNav row">
+			<div class="col-xs-3 btn btn-link">
+				<span>基本信息</span>
+			</div>
+			<div class="col-xs-3 btn btn-link">
+				<span>合约套餐</span>
+			</div>
+			<div class="col-xs-3 btn btn-link">
+				<span>图文介绍</span>
+			</div>
+			<div class="col-xs-3 btn btn-link">
+				<span>评价</span>
+			</div>
+		</div>
+		<div class="productCont row">
+			<div class="tabBanner">
+				<div class="banner">
+					<ul>
+						<li><img src="../style/img/b.png"/></li>
+					</ul>
+				</div>
+				<div class="nav">
+					<ul>
+						<li></li>
+					</ul>
+				</div>
+			</div>
+			<div class="productText">
+				<div class="numTitle">
+					<span class="price">月供：￥108 × 24</span>
+					<span class="label"><em><b></b></em>手续费:11%</span>
+				</div>
+				<div class="num">
+					<span>购机价：￥3299</span>
+				</div>
+				<div class="norms">
+					<span>三星(SAMSUNG)P709电信4G手机 选择电信乐享4G套餐即可超低价购机!</span>
+				</div>
+			</div>
+		</div>
+		<div class="productInfo row">
+				<ul>
+					<li>
+						<div class="stages">
+							<span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+							<div class="address">湖南省</div>
+							<div class="address">衡阳市</div>
+						</div>
+					</li>
+					<li>
+						<div class="stages">
+							<span>规&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span>
+							<div class="select">16G</div>
+							<div class="select">32G</div>
+						</div>
+					</li>
+					<li>
+						<div class="stages">
+							<span>地&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;区：</span>
+							<div class="select">白</div>
+							<div class="select">黑</div>
+						</div>
+					</li>
+					<li>
+						<div class="stages">
+							<span>数&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;量：</span>
+							<div class="add">-</div>
+							<div class="num">1</div>
+							<div class="subtract">+</div>
+						</div>
+					</li>
+					<li>
+						<div class="stages">
+							<span>分期期数：</span>
+							<div class="select">24期</div>
+							<div class="select">36期</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$('.select').bind('click',function(){
+			$(this).addClass('checked').siblings().removeClass('checked');
+		});
+  	});
+</script>
 </body>

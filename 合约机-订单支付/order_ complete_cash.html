@@ -8,15 +8,61 @@
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
 	
-	<script src="style/js/bootstrap.min.js"></script>
-	<script src="style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
 	
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap.min.css" />
-	<link rel="stylesheet" type="text/css" href="style/css/bootstrap-theme.min.css" />
-	<link rel="stylesheet" type="text/css" href="style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/order_complete_cash.css" />
 </head>
 
 <body>
 <!-- 支付成功-到付 -->
-
+<div class="container-fluid">
+	<div class="header row">
+		<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>支付成功</span>
+		</div>
+	</div>
+	<div class="orderComplete row">
+		<div class="orderCont">
+			<div class="orderPrompt">
+				<div class="text">
+					<span>您的订单已提交成功,我们会尽快与您联系!</span>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div>订单编号：<span>000998</span></div>
+				</li>
+				<li>
+					<div class="info">收货信息：
+						<span>张三三</span>
+						<span>18122299239</span>
+						<span>广州广州某某某某某地方地方</span>
+					</div>
+				</li>
+				<li>
+					<div>支付方式：<span>货到付款-中国银行</span></div>
+				</li>
+				<li>
+					<div class="num">
+						<div>分期总额：</div>
+						<span><b>￥3988</b>(含购机价￥1299,含全额话费￥2688)</span>
+					</div>
+				</li>
+			</ul>
+			<div class="contNav">
+				<button type="button" class="btn btn-block">
+					<span>继续购物</span>
+				</button>
+				<button type="button" class="btn btn-block">
+					<span>我的订单</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 </body>
