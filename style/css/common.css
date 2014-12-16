@@ -92,7 +92,28 @@ a{text-decoration:none;color:#333,display: inline-block;
 	width: 100%;
 }
 
+/*选择按钮*/
+.bt_select{
+	display:inline-block; 
+	margin:0 5px 10px 0; 
+	line-height:30px;
+	width:85px;
+	text-align:center;
+	border:1px solid #a4a4a4;
+	border-radius:2px;
+	font-size:14px;
+	color:#595959;
+}
+.bt_checked{
+	background:url(../img/stages_checked.png) right bottom no-repeat;
+	background-size:12px;
+	border-color:#378bff;
+}
+
 
 /*上下箭头 另外给高度和宽度 父辈加position:relative;*/
+.hasArrows{
+	position:relative;
+}
 .arrowsHide{background:url(../img/arrows_hide.png) center no-repeat;background-size:15px 10px;position:absolute;right: 0;top: 0;height:100%;width:40px;}
 .arrowsShow{background:url(../img/arrows_show.png) center no-repeat;background-size:15px 10px;position:absolute;right: 0;top: 0;height:100%;width:40px;}

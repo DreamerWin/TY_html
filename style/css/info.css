@@ -10,7 +10,7 @@ body{
 	background: #fff;
 	border: 1px solid #c4c4c4;
 }
-.info .invoice,.info .recommend,.info .add_address{
+.info .invoice,.info .recommend,.info .add_address,.info .address{
 	border-bottom: none;
 }
 .info ul li{
@@ -26,6 +26,14 @@ body{
 }
 .info a{
 	color: #575757;
+}
+.tb table{
+	width: 100%;
+	
+}
+.tb table td{
+	border: 1px solid #e6e5e5;
+	padding: 5px 15px;
 }
 
 /* 地址部分 */
@@ -89,5 +97,73 @@ body{
 	margin-top: 2px;
 	height: 38px;
 	line-height: 38px;
-	border-top:1px solid #e8e9f1
+	border-top:1px solid #e8e9f1;
 }
+
+/*套餐选择*/
+.per_year_til{
+	width: 28%;
+}
+.per_year_til ul{
+	border-right: 1px solid #e8e9f1;
+}
+.per_year_til ul .selected{
+	background: #fff;
+	color: #f65467;
+	border-left: 2px solid #f65467;
+}
+.per_year_til ul li{
+	padding-left: 10%;
+	padding-right: 10%;
+	height: 43px;
+	line-height: 43px;
+	background: #eef5ff;
+}
+.per_year_til ul li input{
+	display: none;
+}
+.per_year_cnt{
+	width: 72%;
+	margin-top: 8px;
+	padding-left: 0;
+	padding-right: 20px;
+	font-size: 14px;
+}
+.per_year_cnt_p1 .size{
+	margin-top: 5px;
+}
+
+.per_year_cnt_p2{
+	margin-top: 8px;
+}
+.per_year_cnt_p2 .til{
+	margin-bottom: 8px;
+}
+.per_year_cnt_p2 .combo_beyond{
+	color:#7c8898;
+	display: none;
+	cursor: pointer;
+}
+.per_year_cnt_p2 .arrowsHide{
+	height:18px;
+	width:40px;
+	top:2px;
+}
+.per_year_cnt_p2 .arrowsShow{
+	height:18px;
+	width:40px;
+	top:2px;
+}
+.show_msg{
+	padding: 10px;
+	background: #fff;
+	height: 60px;
+	font-size: 14px;
+}
+.show_msg .til{
+	color: #f65456;
+}
+
+
+
+

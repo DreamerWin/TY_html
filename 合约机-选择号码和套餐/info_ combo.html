@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/info.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+	<!-- 头部 -->
+	<div class="row header">
+	 	<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>办理套餐</span>
+	 	</div>
+	</div>
+	<!-- 内容部分 -->
+	<div class="row">
+		<div class="info">
+		<form class="form-horizontal" role="form">
+			<div class="address">
+				<ul>
+					<li class="li_cnt"><span class="list_gray">您已选择：</span><span class="list_back">iPhone5s 黑色16G</span></li>
+					<li class="li_cnt">
+						<div class="fill_til">请选择餐和号码</div>
+						<div class="row fill_til_desc">
+							<div class="col-xs-10">根据您的月消费，选择一个合适的合约计划</div>
+							<div class="col-xs-2"><img src="../style/img/arrows_show.png" width="15" height="10"></div>
+						</div>
+					</li>
+				</ul>
+				<!-- 套餐展开部分 -->
+				<div class="row combo">
+					<div class="col-xs-3 per_year_til" id="per_year_til">
+						<ul>
+							<li class="selected" value="1">99元/月</li>
+							<li value="2">169元/月</li>
+							<li value="3">209元/月</li>
+							<li value="4">299元/月</li>
+							<li value="5">309元/月</li>
+							<li value="6">359元/月</li>
+							<li value="7">399元/月</li>
+						</ul>
+					</div>
+					<div class="col-xs-9 per_year_cnt">
+						<!-- 选合约 -->
+						<div class="per_year_cnt_p1">
+							<div class="til">1.确认您的合约期限</div>
+							<div class="size">
+								<div class="col-xs-2 bt_select" value="24">24个月</div>
+								<div class="col-xs-2 bt_select" value="36">36个月</div>
+							</div>
+							<div class="tb">
+								<table>
+									<tr><td width="50%">总月供价</td><td width="50%" style="color:#f65456">￥320×36期</td></tr>
+									<tr><td width="50%">含购机价</td><td width="50%">1280元</td></tr>
+									<tr><td width="50%">含半额话费</td><td width="50%">8280元</td></tr>
+								</table>
+							</div>
+						</div>
+						<!-- 套餐信息 -->
+						<div class="per_year_cnt_p2">
+							<div class="til">2.确认您的套餐信息</div>
+							<div class="tb">
+								<table>
+									<tr><td width="50%">国内流量</td><td width="50%">500M</td></tr>
+									<tr><td width="50%">国内通话</td><td width="50%">1280分钟</td></tr>
+									<tr id="show_combo_beyond"><td colspan="2">
+										<div class=" hasArrows">
+											<div class="title">
+												<span>套餐超出部分的资费</span>
+											</div>
+											<div id="arrows" class="arrowsHide"></div>
+										</div>
+									</td></tr>
+									<tr class="combo_beyond" id="combo_beyond"><td colspan="2">
+									1.国内流量：不足100MB按0.0003元/KB收费，100MB-500MB收费30元；用户套餐外流量超过500MB时，仍按上述原则（即每超出500MB收费30元）收费，以此类推。上网当月套餐外流量消费600元封顶, 流量15G封顶；<br/>
+									2.国内语音：0.15元/分钟。
+									</td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
+					
+				</div>
+				<!-- 显示信息 -->
+				<input type="hidden" name="per_year" value="1" />
+				<input type="hidden" name="sum_year" />
+				<div class="row show_msg">
+					<div class="col-xs-12 til">您已选择：</div>
+					<div class="col-xs-12">
+						合约月租:<span id="show_per_year"></span>   
+						合约期：<span id="show_sum_year"></span>
+					</div>
+				</div>
+
+			</div>
+
+			<button type="button" class="btn btn-info">确认</button>
+		</form>	
+		</div>
+	</div>
+	
+</div>
+
+<!-- JS部分 -->
+<script>
+$(function(){
+	$('#per_year_til li').each(function(){
+		var _this = $(this);
+		_this.click(function(){
+			$('.selected').removeClass('selected');
+			_this.addClass('selected');
+			$('input[name="per_year"]').val(_this.attr('value'));
+			$('#show_per_year').html(_this.html());
+		});
+	});
+	$('.bt_select').bind('click',function(){
+		$(this).addClass('bt_checked').siblings().removeClass('bt_checked');
+		$('input[name="sum_year"]').val($(this).attr('value'));
+		$('#show_sum_year').html($(this).html());
+	});
+	$("#show_combo_beyond").bind('click',function(){
+			$('#combo_beyond').toggle();
+			$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
+	});
+
+});
+</script>
+</body>
+</html>
