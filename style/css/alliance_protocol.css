@@ -1,0 +1,8 @@
+/*菜品详情*/
+body{background: #fff;}
+.protocol{padding-bottom:30px;}
+.protocol p{font-size:12px;color:#414141;margin: 10px 10px 0;line-height:20px;}
+
+.protocol .contNav{border-top:1px dotted #d5d5d5;margin:16px 10px 0;}
+.protocol .contNav .btn{ width:45%; margin:10px auto; background:#f65456;border-radius:0;padding:8px;border-radius:3px;}
+.protocol .contNav .btn span{color:#fff; font-size: 18px;}

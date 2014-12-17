@@ -1,0 +1,43 @@
+/*首页*/
+body{background:#f1f1f1;}
+.header{background:url(../img/top.png) #368bff 10px center no-repeat;background-size:185px 23px;position:relative;}
+.header .information{ height:100%;width:40px; background:url(../img/information.png)center no-repeat;background-size:23px 20px;position:absolute;right:0;}
+.header .information span{width:14px;height:14px; background:#ff0c00;color:#fff; border-radius:50%;display:block;position:absolute;line-height:15px;top:3px;right:2px;font-size: 10px;font-size: 10px;}
+.carousel-indicators{bottom:0;}
+.carousel-indicators>li{width:8px;height:8px;border:none;background:#fff;opacity: 0.5;margin:0;}
+.carousel-indicators>li.active{width:8px;height:8px;border:none;background:#fff;opacity:1;}
+.index {padding-bottom:30px;}
+.index .infoNav{background:#fff;border-bottom:1px solid #e1e1e1;}
+.index .infoNav ul li{height:70px;border-left:1px solid #e1e1e1;margin:0;padding:0;}
+.index .infoNav ul li:first-child{border-left:none;}
+.index .infoNav ul li.classify{background:url(../img/classify.png) center 5px no-repeat;background-size:40px;}
+.index .infoNav ul li.individual{background:url(../img/individual.png)center 5px no-repeat;background-size:40px;}
+.index .infoNav ul li.stages{background:url(../img/stages.png)center 5px no-repeat;background-size:40px;}
+.index .infoNav ul li.help{background:url(../img/help.png)center 5px no-repeat;background-size:40px;}
+.index .infoNav ul li>span{display:block;text-align:center;margin-top:50px;color:#444343;font-size:12px;}
+.index .title{padding:15px 0 5px;}
+.index .title span{font-size:15px;color:#444343;}
+.index .product{background:#fff;border-top:1px solid #e1e1e1;border-bottom:1px solid #e1e1e1;}
+.index .product ul li{border-top:1px solid #e1e1e1;height:165px;}
+.index .product ul li:first-child{border-top:none;}
+.index .product ul li .cont{border-left:1px solid #e1e1e1;height:165px;margin:0;padding:0;}
+.index .product ul li .cont:first-child{border-left:none;}
+.index .product ul li .photo{text-align:center;}
+.index .product ul li .photo img{width:70%;}
+.index .product ul li .text{position:absolute;bottom:5px;text-align:center;width:100%;}
+.index .product ul li .text .textTitle{margin:0 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+.index .product ul li .text .textTitle span{font-size:11px;color:#5d5b5b;}
+.index .product ul li .text .num{font-size:12px;color:#f65467;font-family:arial;}
+.index .product ul li .text .num span{font-size:15px;}
+.index .foot{border-top:1px solid #d9d8d8;border-bottom:1px solid #d9d8d8;margin-top:12px;background:#fff;}
+.index .foot .nav{border-top:1px solid #e2e1e1;padding:8px 0;}
+.index .foot .nav:first-child{border-top:none;}
+.index .foot .nav>div{border-left:1px solid #888888;padding:0;margin:0;}
+.index .foot .nav>div:first-child{border-left:none;}
+.index .foot .nav>div>span{margin-left:16px;padding-left:22px;color:#6e6e6e;font-size:11px;}
+.index .foot .nav>div.user span{background:url(../img/index_user.png) center left no-repeat;background-size:13px;}
+.index .foot .nav>div.open span{background:url(../img/index_open.png) center left no-repeat;background-size:11px 13px;}
+.index .foot .nav>div.iMac{text-align:right;padding-right:18px;}
+.index .foot .nav>div.iMac span{background:url(../img/index_iMac.png) center left no-repeat;background-size:13px;}
+.index .foot .nav>div.iPhone span{background:url(../img/index_iPhone.png) center left no-repeat;background-size:10px 14px;}
+.index .foot .nav>div.tel span{padding-left:0;}
