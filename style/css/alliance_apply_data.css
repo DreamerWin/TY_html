@@ -1,0 +1,13 @@
+/*菜品详情*/
+body{background: #eee;}
+.allianceApply{padding-bottom:30px;}
+.allianceApply .text{background:#fff;border:1px solid #d5d5d5;margin:4px 4px 0;}
+.allianceApply .text .top{background:#ecf3ff;border-bottom:1px solid #d5d5d5;height:30px;line-height:30px;padding-left:10px;}
+.allianceApply .text .top span{font-size:13px;color:#191919;}
+.allianceApply .contNav{margin-top:16px;}
+.allianceApply .contNav .btn{ width:95%; margin:10px auto; background:#d1d1d1;border-radius:0;padding:8px;border-radius:3px;}
+.allianceApply .contNav .btn span{color:#fff; font-size: 18px;}
+.allianceApply .text .cont ul li{border-top:1px solid #eff2f7;}
+.allianceApply .text .cont .fill_content .li_cnt {padding-left: 16px;padding-right: 8px;padding-top: 5px;padding-bottom: 5px;font-size: 14px;}
+.allianceApply .text .cont .fill_content .li_cnt .form-group label {padding-left: 0px;padding-right: 0px;padding-top: 6px;font-weight: normal;font-size: 14px; color:#aeaeae;}
+.allianceApply .text .cont .fill_content .li_cnt .form-group .iCheck{padding-top:5px !important;}

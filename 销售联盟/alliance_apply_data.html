@@ -1,0 +1,142 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/icheck/icheck.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style/js/icheck/flat/blue.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/alliance_apply_data.css" />
+</head>
+
+<body>
+
+<!-- 分类页面 -->
+<div class="container-fluid">
+	<div class="header row">
+		<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>销售联盟</span>
+		</div>
+		<div class="col-xs-3 rightNav"></div>
+	</div>
+	<div class="allianceApply row">
+		<div class="text">
+			<div class="top">
+				<span>银行信息</span>
+			</div>
+			<div class="cont">
+			<form class="form-horizontal" role="form">
+				<ul class="fill_content">
+					<li class="li_cnt">
+						<div class="form-group">
+						    <label for="inputName" class="col-xs-3">开户名：</label>
+						    <div class="cnt col-xs-8">
+						      <input type="text" class="form-control" id="inputName">
+						    </div>
+					 	</div>
+					</li>
+					<li class="li_cnt">
+						<div class="form-group">
+						    <label for="inputName" class="col-xs-3">身份证：</label>
+						    <div class="cnt col-xs-8">
+						      <input type="text" class="form-control" id="inputName">
+						    </div>
+					 	</div>
+					</li>
+					<li class="li_cnt">
+						<div class="form-group">
+						    <label for="inputName" class="col-xs-3">开户银行：</label>
+						    <div class="cnt col-xs-8">
+						      <input type="text" class="form-control" id="inputName">
+						    </div>
+					 	</div>
+					</li>
+					<li class="li_cnt">
+						<div class="form-group">
+						    <label for="inputName" class="col-xs-3">开户账号：</label>
+						    <div class="cnt col-xs-8">
+						      <input type="text" class="form-control" id="inputName">
+						    </div>
+					 	</div>
+					</li>
+				</ul>
+				</form>
+			</div>
+		</div>
+		<div class="text">
+			<div class="top">
+				<span>个人信息</span>
+			</div>
+			<div class="cont">
+				<form class="form-horizontal" role="form">
+					<ul class="fill_content">
+						<li class="li_cnt">
+							<div class="form-group">
+							    <label for="inputName" class="col-xs-3">手机号码：</label>
+							    <div class="cnt col-xs-8">
+							      <input type="text" class="form-control" id="inputName">
+							    </div>
+						 	</div>
+						</li>
+						<li class="li_cnt">
+							<div class="form-group">
+							    <label for="inputName" class="col-xs-3">qq号码：</label>
+							    <div class="cnt col-xs-8">
+							      <input type="text" class="form-control" id="inputName">
+							    </div>
+						 	</div>
+						</li>
+						<li class="li_cnt">
+							<div class="form-group">
+							    <label for="inputName"  style="color:#5b5b5b;"  class="col-xs-5">是否有推荐人：</label>
+							    <div class="cnt col-xs-7 iCheck">
+									<div class="col-xs-7 row">
+										<div class="col-xs-1"><input type="radio" name="invoice_cnt" checked></div>
+										<div class="col-xs-1">是</div>
+									</div>
+									<div class="col-xs-7 row">
+										<div class="col-xs-1"><input type="radio" name="invoice_cnt" checked></div>
+										<div class="col-xs-1">否</div>
+									</div>
+							    </div>
+						 	</div>
+						</li>
+						<li class="li_cnt">
+							<div class="form-group">
+							    <label for="inputName" style="color:#5b5b5b;" class="col-xs-4">推荐人工号：</label>
+							    <div class="cnt col-xs-8">
+							      <input type="text" class="form-control" id="inputName">
+							    </div>
+						 	</div>
+						</li>
+					</ul>
+				</form>
+			</div>
+		</div>
+		<div class="contNav">
+			<button type="button" class="btn btn-block">
+				<span>提交申请</span>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- JS部分 -->
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-blue',
+    radioClass: 'iradio_flat-blue'
+  });
+});
+</script>
+</body>
+</html>
