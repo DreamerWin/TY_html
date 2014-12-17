@@ -10,4 +10,5 @@ body{background: #eee;}
 .allianceApply .text .cont ul li{border-top:1px solid #eff2f7;}
 .allianceApply .text .cont .fill_content .li_cnt {padding-left: 16px;padding-right: 8px;padding-top: 5px;padding-bottom: 5px;font-size: 14px;}
 .allianceApply .text .cont .fill_content .li_cnt .form-group label {padding-left: 0px;padding-right: 0px;padding-top: 6px;font-weight: normal;font-size: 14px; color:#aeaeae;}
+.text .cont .fill_content .li_cnt .form-group label span{color:#ff6c71;}
 .allianceApply .text .cont .fill_content .li_cnt .form-group .iCheck{padding-top:5px !important;}
