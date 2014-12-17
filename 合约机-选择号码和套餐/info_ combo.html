@@ -10,9 +10,12 @@
 	
 	<script src="../style/js/jquery-1.11.1.min.js"></script>
 	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/icheck/icheck.min.js"></script>
+
 
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/js/icheck/flat/blue.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/info.css" />
 </head>
@@ -101,14 +104,73 @@
 				<div class="row show_msg">
 					<div class="col-xs-12 til">您已选择：</div>
 					<div class="col-xs-12">
-						合约月租:<span id="show_per_year"></span>   
+						合约月租:<span id="show_per_year">99元/月</span>   
 						合约期：<span id="show_sum_year"></span>
 					</div>
 				</div>
+				<!-- 选号码 -->
+				<div class="number">
+					<div class="row number_til">
+						<div class="col-xs-1"><input type="checkbox" name="copy_number"></div>
+						<div class="col-xs-10">增开副卡(一个套餐两人共享，副卡￥10/月)</div>
+					</div>
+					<ul class="nav nav-tabs" role="tablist" id="myTab">
+					  	<li role="presentation" class="active col-xs-4">
+					  		<a href="#all" role="tab" data-toggle="tab">全部号段</a>
+				  		</li>
+					  	<li role="presentation" class="col-xs-4">
+					  		<a href="#main" role="tab" data-toggle="tab">主卡号码</a>
+				  		</li>
+					  	<li role="presentation" class="col-xs-4">
+					  		<a href="#copy" role="tab" data-toggle="tab">副卡号码</a>
+				  		</li>
+					</ul>
 
+					<div class="tab-content">
+					  	<div role="tabpanel" class="tab-pane active" id="all">
+					  		<table class="table table-bordered text-center">
+								<tr><td>187 2720 1821</td><td>177 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+							</table>
+					  	</div>
+					  	<div role="tabpanel" class="tab-pane" id="main">
+					  		<table class="table table-bordered text-center">
+					  			<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>187 2720 1821</td><td>177 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+							</table>
+					  	</div>
+					  	<div role="tabpanel" class="tab-pane" id="copy">
+					  		<table class="table table-bordered text-center">
+								<tr><td>187 2720 1821</td><td>177 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+								<tr><td>188 2720 1821</td><td>178 2720 1821</td></tr>
+							</table>
+					  	</div>
+					</div>
+				</div>
+				<div class="footRager">
+					<nav>
+					  <ul class="pager">
+					    <li><a class="previous" href="#">上一页</a></li>
+					    <li class="text"><input class="pagerInput" type="text" value="1"/></li>
+					    <li><a href="#">下一页</a></li>
+					  </ul>
+					</nav>
+				</div>
+				<button type="button" class="btn btn-info">确认套餐信息</button>
 			</div>
-
-			<button type="button" class="btn btn-info">确认</button>
+			
 		</form>	
 		</div>
 	</div>
@@ -118,6 +180,15 @@
 <!-- JS部分 -->
 <script>
 $(function(){
+	//号码标签
+	$('#myTab a:first').tab('show');
+	
+	$('#myTab li:last').hide();
+	$('input[name="copy_number"]').on('ifChecked', function(event){
+	  $('#myTab li:last').show();
+	  $('#myTab li:last').css('borderRight','none');
+	});
+
 	$('#per_year_til li').each(function(){
 		var _this = $(this);
 		_this.click(function(){
@@ -127,15 +198,25 @@ $(function(){
 			$('#show_per_year').html(_this.html());
 		});
 	});
-	$('.bt_select').bind('click',function(){
+	$('.size .bt_select').bind('click',function(){
 		$(this).addClass('bt_checked').siblings().removeClass('bt_checked');
 		$('input[name="sum_year"]').val($(this).attr('value'));
 		$('#show_sum_year').html($(this).html());
 	});
-	$("#show_combo_beyond").bind('click',function(){
-			$('#combo_beyond').toggle();
-			$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
+	$('.tab-content td').bind('click',function(){
+		$('.tab-content').contents().find('td').removeClass('bt_checked');
+		$(this).addClass('bt_checked');
 	});
+	
+	$("#show_combo_beyond").bind('click',function(){
+		$('#combo_beyond').toggle();
+		$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
+	});
+
+	$('input').iCheck({
+    	checkboxClass: 'icheckbox_flat-blue',
+    	radioClass: 'iradio_flat-blue'
+  	});
 
 });
 </script>

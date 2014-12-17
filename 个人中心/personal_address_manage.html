@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/icheck/icheck.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/js/icheck/flat/blue.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/info.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+	<!-- 头部 -->
+	<div class="row header">
+	 	<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>地址管理</span>
+	 	</div>
+	</div>
+	<!-- 内容部分 -->
+	<div class="row">
+		<div class="info">
+		<form class="form-horizontal" role="form">
+			<div class="add_address_til">
+				<div class="li_cnt" style="text-align:center">
+					<a href="#">
+					<img src="../style/img/add_back.png" width="18" height="18">
+					<span>新增地址</span>
+					</a>
+				</div>
+			</div>
+
+			<div class="address_list">
+				<div class="set_default"><input type="radio" name="set_default" checked>&nbsp;&nbsp;设为默认</div>
+				<div class="row form-group">
+					<div class="col-xs-3">张三三</div>
+					<div class="col-xs-3">18122255995</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-xs-12">北京市朝阳区东三环中路55号富力双子座6B座1603室</div>
+				</div>
+				<div class="row form-group edit_btn">
+					<div class="col-xs-6" style="border-right:1px solid #e8e9f1">
+						<a href="#">
+						<img src="../style/img/edit_back.png" width="18" height="18">
+						<span>修改</span>
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="#">
+						<img src="../style/img/delete_back.png" width="18" height="18">
+						<span>删除</span>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div class="address_list">
+				<div class="set_default"><input type="radio" name="set_default">&nbsp;&nbsp;设为默认</div>
+				<div class="row form-group">
+					<div class="col-xs-3">张三三</div>
+					<div class="col-xs-3">18122255995</div>
+				</div>
+				<div class="row form-group">
+					<div class="col-xs-12">北京市朝阳区东三环中路55号富力双子座6B座1603室</div>
+				</div>
+				<div class="row form-group edit_btn">
+					<div class="col-xs-6" style="border-right:1px solid #e8e9f1">
+						<a href="#">
+						<img src="../style/img/edit_back.png" width="18" height="18">
+						<span>修改</span>
+						</a>
+					</div>
+					<div class="col-xs-6">
+						<a href="#">
+						<img src="../style/img/delete_back.png" width="18" height="18">
+						<span>删除</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			<button type="button" class="btn btn-info">确认</button>
+		</form>	
+		</div>
+	</div>
+	
+</div>
+
+<!-- JS部分 -->
+<script>
+$(document).ready(function(){
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-blue',
+    radioClass: 'iradio_flat-blue'
+  });
+});
+</script>
+</body>
+</html>

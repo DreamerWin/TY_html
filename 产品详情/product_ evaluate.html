@@ -7,9 +7,8 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
-	
-	<script src="../style/js/bootstrap.min.js"></script>
 	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
@@ -43,5 +42,166 @@
 				<span>评价</span>
 			</div>
 		</div>
+		<div class="evaluateRatio row">
+			<div class="ratio">
+				<div class="num">
+					<span>90</span>
+					<span>%</span>
+				</div>
+				<div class="text">
+					<span>好评度</span>
+				</div>
+			</div>
+			<div class="progressCont">
+				<ul>
+					<li>
+						<div class="lTitle">
+							<span>好评</span>
+							（90%）
+						</div>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+						</div>
+					</li>
+					<li>
+						<div class="lTitle">
+							<span>中评</span>
+							（8%）
+						</div>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" aria-valuenow="8" aria-valuemin="0" aria-valuemax="100" style="width: 8%;"></div>
+						</div>
+					</li>
+					<li>
+						<div class="lTitle">
+							<span>差评</span>
+							（2%）
+						</div>
+						<div class="progress">
+						  <div class="progress-bar" role="progressbar" aria-valuenow="2" aria-valuemin="0" aria-valuemax="100" style="width:2%;"></div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="evaluateInfo row">
+			<div class="infoNav">
+				<nav>
+					<ul class="pagination row">
+						<li><a href="#">好评(100)</a></li>
+						<li><a href="#">中评(2)</a></li>
+						<li><a href="#">差评(1)</a></li>
+					</ul>
+				</nav>
+			</div>
+			<ul>
+				<li>
+					<div class="grade">
+						<span>4分</span>
+						<div class="star">
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+						</div>
+					</div>
+					<div class="product">
+						<span>所选产品:</span>199元iphone5S 套餐 颜色:白色
+					</div>
+					<div class="comment">
+						<span>产品评论:</span>199元iphone5S 套餐 颜色:白色
+					</div>
+					<div class="inscription">
+						<span>张三三 2014-9-11</span>
+					</div>
+				</li>
+				<li>
+					<div class="grade">
+						<span>4分</span>
+						<div class="star">
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+						</div>
+					</div>
+					<div class="product">
+						<span>所选产品:199元iphone5S 套餐 颜色:白色</span>
+					</div>
+					<div class="comment">
+					</div>
+					<div class="inscription">
+						<span>张三三 2014-9-11</span>
+					</div>
+				</li>
+				<li>
+					<div class="grade">
+						<span>4分</span>
+						<div class="star">
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+						</div>
+					</div>
+					<div class="product">
+						<span>所选产品:199元iphone5S 套餐 颜色:白色</span>
+					</div>
+					<div class="comment">
+					</div>
+					<div class="inscription">
+						<span>张三三 2014-9-11</span>
+					</div>
+				</li>
+				<li>
+					<div class="grade">
+						<span>4分</span>
+						<div class="star">
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+							<span class="star_uSet"></span>
+						</div>
+					</div>
+					<div class="product">
+						<span>所选产品:199元iphone5S 套餐 颜色:白色</span>
+					</div>
+					<div class="comment">
+					</div>
+					<div class="inscription">
+						<span>张三三 2014-9-11</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="footRager">
+			<nav>
+			  <ul class="pager">
+			    <li><a class="previous" href="#">上一页</a></li>
+			    <li class="text"><input class="pagerInput" type="text" value="1"/></li>
+			    <li><a href="#">下一页</a></li>
+			  </ul>
+			</nav>
+		</div>
 	</div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$('.star>span').bind('click',function(){
+			if($(this).hasClass("star_uSet")){
+				$(this).prevAll().attr("class","star_set");
+				$(this).attr("class","star_set");
+			}else{
+				$(this).siblings().attr("class","star_uSet");
+				$(this).attr("class","star_uSet");
+			};
+		});
+		if($('.pagerInput').val()<=1)
+		$('.previous').css("color", "#bcbcbc");
+  	});
+</script>
 </body>

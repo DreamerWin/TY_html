@@ -7,8 +7,12 @@ a{text-decoration:none;color:#333,display: inline-block;
 *display: inline;
 *zoom: 1;}
 
+.border{
+	background: #fff;
+	border: 1px solid #c4c4c4;
+}
 /*header*/
-.header{height:45px;line-height:45px;background:#368bff;text-align:center;overflow:hidden;}
+.header{height:45px;line-height:45px;background:#368bff;text-align:center;}
 .header .title span{color:#fff;font-size:16px;}
 .header .register{ color:#fff; text-align:right;}
 .header .register span{font-size:14px;}
@@ -54,6 +58,13 @@ a{text-decoration:none;color:#333,display: inline-block;
 	font-size: 14px;
 }
 .form-group input{
+	border: none;
+	background: none;
+	outline: none;
+	-webkit-box-shadow:none;
+	box-shadow:none;
+}
+.form-group textarea{
 	border: none;
 	background: none;
 	outline: none;
@@ -107,9 +118,28 @@ a{text-decoration:none;color:#333,display: inline-block;
 .bt_checked{
 	background:url(../img/stages_checked.png) right bottom no-repeat;
 	background-size:12px;
-	border-color:#378bff;
+	border-color:#378bff!important;
 }
 
+/*tab样式*/
+.nav-tabs{
+	border-bottom: none;
+}
+.nav-tabs>li>a{
+	border-radius:0;
+	border: none;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:hover, .nav-tabs>li.active>a:focus{
+	border: none;
+	background: none;
+}
+
+/*分页样式*/
+.footRager .pager{margin: 16px 0;}
+.footRager .pager li>a{border:none;color:#595959;font-size:12px;}
+.footRager .pager li>a:hover,.footRager .pager li>a:focus{border:none;background-color:#fff;font-size:12px;}
+.footRager .pager .text{width:90px; height:27px; border:1px solid #a4a4a4;border-radius:2px;background:#f8f8f8;display: inline-block;}
+.footRager .pager .text>input{border:none;width:100%;text-align:center;background:none;outline:none;padding:5px;}
 
 /*上下箭头 另外给高度和宽度 父辈加position:relative;*/
 .hasArrows{

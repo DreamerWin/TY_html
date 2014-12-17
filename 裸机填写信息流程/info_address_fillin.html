@@ -35,11 +35,11 @@
 			<div class="address">
 				<ul>
 					<li class="li_cnt"><span class="list_gray">您已选择：</span><span class="list_back">iPhone5s 黑色16G</span></li>
-					<li class="li_cnt">
-						<div class="fill_til">请填写收货信息</div>
-						<div class="row fill_til_desc">
-							<div class="col-xs-10">请选择您的收货姓名、收货地址、联系号码</div>
-							<div class="col-xs-2"><img src="../style/img/arrows_show.png" width="15" height="10"></div>
+					<li class="li_cnt" id="address_fillin">
+						<div class=" hasArrows">
+							<div class="fill_til">请填写收货信息</div>
+							<div class="fill_til_desc">请选择您的收货姓名、收货地址、联系号码</div>
+							<div id="arrows" class="arrowsHide"></div>
 						</div>
 					</li>
 				</ul>
@@ -130,12 +130,14 @@
 			<!-- 发票信息展开 -->
 			<div class="invoice">
 				<ul>
-					<li class="li_cnt">
-						<div class="row">
-							<div class="col-xs-10">请填写发票信息</div>
-							<div class="col-xs-2"><img src="../style/img/arrows_show.png" width="15" height="10"></div>
+					<li class="li_cnt" id="invoice_fillin">
+						<div class=" hasArrows">
+							<div class="title">请填写发票信息</div>
+							<div id="arrows" class="arrowsHide"></div>
 						</div>
 					</li>
+
+				<div id="invoice_main">
 					<li class="li_cnt invoice_name">发票抬头</li>
 					<div class="invoice_name_list">
 						<li class="li_cnt">
@@ -173,6 +175,7 @@
 							</div>
 						</li>
 					</div>
+				</div>
 				</ul>
 			</div>
 			<button type="button" class="btn btn-info">确认</button>
@@ -185,10 +188,20 @@
 <!-- JS部分 -->
 <script>
 $(document).ready(function(){
-  $('input').iCheck({
-    checkboxClass: 'icheckbox_flat-blue',
-    radioClass: 'iradio_flat-blue'
-  });
+	//缩展地址信息
+	$("#address_fillin").bind('click',function(){
+		$('.fill_content').toggle();
+		$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
+	});
+	//缩展发票信息
+	$("#invoice_fillin").bind('click',function(){
+		$('#invoice_main').toggle();
+		$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
+	});
+  	$('input').iCheck({
+    	checkboxClass: 'icheckbox_flat-blue',
+    	radioClass: 'iradio_flat-blue'
+  	});
 });
 </script>
 </body>

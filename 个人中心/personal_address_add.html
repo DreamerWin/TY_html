@@ -10,11 +10,9 @@
 	
 	<script src="../style/js/jquery-1.11.1.min.js"></script>
 	<script src="../style/js/bootstrap.min.js"></script>
-	<script src="../style/js/icheck/icheck.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
-	<link rel="stylesheet" type="text/css" href="../style/js/icheck/flat/blue.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/info.css" />
 </head>
@@ -25,24 +23,14 @@
 	<div class="row header">
 	 	<div class="col-xs-3 back"></div>
 	 	<div class="col-xs-6 title">
-			<span>填写收货地址</span>
+			<span>新增地址</span>
 	 	</div>
 	</div>
 	<!-- 内容部分 -->
 	<div class="row">
 		<div class="info">
 		<form class="form-horizontal" role="form">
-			<div class="address">
-				<ul>
-					<li class="li_cnt"><span class="list_gray">您已选择：</span><span class="list_back">iPhone5s 黑色16G</span></li>
-					<li class="li_cnt" id="address_fillin">
-						<div class=" hasArrows">
-							<div class="fill_til">请填写收货信息</div>
-							<div class="fill_til_desc">请选择您的收货姓名、收货地址、联系号码</div>
-							<div id="arrows" class="arrowsHide"></div>
-						</div>
-					</li>
-				</ul>
+			<div class="add_address">
 				<!-- 展开收货信息 -->
 				<ul class="fill_content">
 					<li class="li_cnt">
@@ -114,69 +102,6 @@
 					 	</div>
 					</li>
 				</ul>
-				<!-- 推荐人工号 -->
-				<ul>
-					<li class="li_cnt" style="border:none">
-						<div class="form-group">
-						    <label for="inputEmail3" class="col-xs-2 list_back">详细地址：</label>
-						    <div class="cnt col-xs-10">
-						      <input type="text" class="form-control" id="inputEmail3" placeholder="若有推荐人，请输入对应工号">
-						    </div>
-					 	</div>
-					</li>
-				</ul>
-			</div>
-
-			<!-- 发票信息展开 -->
-			<div class="invoice">
-				<ul>
-					<li class="li_cnt" id="invoice_fillin">
-						<div class=" hasArrows">
-							<div class="title">请填写发票信息</div>
-							<div id="arrows" class="arrowsHide"></div>
-						</div>
-					</li>
-
-				<div id="invoice_main">
-					<li class="li_cnt invoice_name">发票抬头</li>
-					<div class="invoice_name_list">
-						<li class="li_cnt">
-							<div class="row form-group">
-								<div class="col-xs-1"><input type="radio" name="invoice_name" checked></div>
-								<div class="col-xs-3">单位</div>
-								<div class="col-xs-7" style="margin-top:-8px;padding-left:0;"><input type="text" class="form-control" id="inputEmail3" placeholder="请输入单位名称"></div>
-							</div>
-						</li>
-						<li class="li_cnt">
-							<div class="row form-group">
-								<div class="col-xs-1"><input type="radio" name="invoice_name"></div>
-								<div class="col-xs-3">个人</div>
-							</div>
-						</li>
-					</div>
-					<li class="li_cnt invoice_cnt">发票内容</li>
-					<div class="invoice_cnt_list">
-						<li class="li_cnt">
-							<div class="row form-group">
-								<div class="col-xs-1"><input type="radio" name="invoice_cnt"></div>
-								<div class="col-xs-3">电脑配件</div>
-							</div>
-						</li>
-						<li class="li_cnt">
-							<div class="row form-group">
-								<div class="col-xs-1"><input type="radio" name="invoice_cnt" checked></div>
-								<div class="col-xs-3">办公用品</div>
-							</div>
-						</li>
-						<li class="li_cnt">
-							<div class="row form-group">
-								<div class="col-xs-1"><input type="radio" name="invoice_cnt"></div>
-								<div class="col-xs-3">明细</div>
-							</div>
-						</li>
-					</div>
-				</div>
-				</ul>
 			</div>
 			<button type="button" class="btn btn-info">确认</button>
 		</form>	
@@ -188,20 +113,10 @@
 <!-- JS部分 -->
 <script>
 $(document).ready(function(){
-	//缩展地址信息
-	$("#address_fillin").bind('click',function(){
-		$('.fill_content').toggle();
-		$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
-	});
-	//缩展发票信息
-	$("#invoice_fillin").bind('click',function(){
-		$('#invoice_main').toggle();
-		$('#arrows').attr("class",$('#arrows').hasClass("arrowsHide") ? "arrowsShow" : "arrowsHide");
-	});
-  	$('input').iCheck({
-    	checkboxClass: 'icheckbox_flat-blue',
-    	radioClass: 'iradio_flat-blue'
-  	});
+  $('input').iCheck({
+    checkboxClass: 'icheckbox_flat-blue',
+    radioClass: 'iradio_flat-blue'
+  });
 });
 </script>
 </body>

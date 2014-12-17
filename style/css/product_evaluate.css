@@ -1,8 +1,43 @@
 /*菜品详情*/
-body{background: #eee;}
+body{background: #fff;}
 .productEvaluate{padding-bottom:30px;}
 .productEvaluate .tabNav{height:44px;border-bottom:1px solid #cbcbcb; background:#fff;}
 .productEvaluate .tabNav .btn-link{color:#838383;height:44px;padding: 10px 0;text-align:center;}
 .productEvaluate .tabNav .btn-link span{font-size:14px;border-left:1px solid #b8b8b8;display:block;}
 .productEvaluate .tabNav .btn-link:first-child span{border-left:none;}
 .productEvaluate .btn-link:hover, .productEvaluate .btn-link:focus{color:#f45456;text-decoration:none;border-bottom:2px solid #f45456;}
+.productEvaluate .evaluateRatio{position:relative;margin-top:14px;}
+.productEvaluate .evaluateRatio .ratio{position:absolute;left:10px;top:0;}
+.productEvaluate .evaluateRatio .ratio .num{position:relative;}
+.productEvaluate .evaluateRatio .ratio .num>span:first-child{font-size:40px;line-height:40px; color:#f65467;padding-right:20px;}
+.productEvaluate .evaluateRatio .ratio .num>span:nth-child(2){font-size:18px;color:#525252;position:absolute;top:10px;right:0;}
+.productEvaluate .evaluateRatio .ratio .text{margin-top:-4px; margin-left:1px;}
+.productEvaluate .evaluateRatio .ratio .text span{font-size:14px;color:#838383;}
+.productEvaluate .evaluateRatio .progressCont{margin-left:90px;}
+.productEvaluate .evaluateRatio .progressCont>ul>li{position:relative;}
+.productEvaluate .evaluateRatio .progressCont>ul>li .lTitle{position:absolute;font-size:12px;color:#a9a9a9;top:-1px;}
+.productEvaluate .evaluateRatio .progressCont>ul>li .lTitle span{font-size:13px;color:#838383;}
+.productEvaluate .evaluateRatio .progressCont>ul>li .progress{margin-left:100px;margin-right:28px;height:14px; margin-bottom:6px;background:#b8b8b8;border-radius:0;}
+.productEvaluate .evaluateRatio .progressCont>ul>li .progress .progress-bar{background:#f75469;}
+.productEvaluate .evaluateInfo .infoNav{margin-top:2px;}
+.productEvaluate .evaluateInfo .infoNav .pagination{margin:0 8px;display:block;}
+.productEvaluate .evaluateInfo .infoNav .pagination>li>a{width:33.33%;text-align:center;color:#4b4b4b;border-color:#dcdcdc;}
+.productEvaluate .evaluateInfo .infoNav .pagination>li>a:hover,.productEvaluate .evaluateInfo .infoNav .pagination>li>a:focus{background:#dcdcdc;}
+.productEvaluate .evaluateInfo>ul{margin:0 2px;}
+.productEvaluate .evaluateInfo>ul>li{min-height:90px;border-bottom:1px solid #cccccc;position:relative;}
+.productEvaluate .evaluateInfo>ul>li .grade{position:absolute;top:14px;left:10px;z-index:10;}
+.productEvaluate .evaluateInfo>ul>li .grade>span{font-size:15px; color:#5c5c5c;position:absolute;}
+.productEvaluate .evaluateInfo>ul>li .grade .star{margin-left:40px;margin-top: 2px;}
+.productEvaluate .evaluateInfo>ul>li .grade .star .star_uSet{width:16px;height:15px;display:inline-block; background:url(../img/star_uSet.png) center no-repeat;background-size:16px 15px;}
+.productEvaluate .evaluateInfo>ul>li .grade .star .star_set{width:16px;height:15px;display:inline-block; background:url(../img/star_set.png) center no-repeat;background-size:16px 15px;}
+.productEvaluate .evaluateInfo>ul>li .product{padding:40px 10px 0 62px;position:relative;color:#838383;font-size:12px;}
+.productEvaluate .evaluateInfo>ul>li .product span{ color:#5c5c5c;position:absolute;left:10px;}
+.productEvaluate .evaluateInfo>ul>li .comment{padding:8px 10px 30px 62px;position:relative;color:#838383;font-size:12px;}
+.productEvaluate .evaluateInfo>ul>li .comment span{ color:#5c5c5c;position:absolute;left:10px;}
+.productEvaluate .evaluateInfo>ul>li .inscription{position:absolute;bottom:3px;right:8px;text-align:right;}
+.productEvaluate .evaluateInfo>ul>li .inscription span{font-size:12px; color:#838383;}
+.productEvaluate .footRager .pager{margin: 16px 0;}
+.productEvaluate .footRager .pager li>a{border:none;color:#595959;font-size:12px;}
+.productEvaluate .footRager .pager li>a:hover,.productEvaluate .footRager .pager li>a:focus{border:none;background-color:#fff;font-size:12px;}
+.productEvaluate .footRager .pager .text{width:90px; height:27px; border:1px solid #a4a4a4;border-radius:2px;background:#f8f8f8;display: inline-block;}
+.productEvaluate .footRager .pager .text>input{border:none;width:100%;text-align:center;background:none;outline:none;padding:5px;}

@@ -1,0 +1,122 @@
+body{
+	background: #eeeeee;
+}
+.title{
+	font-size: 16px;
+	color: #fff;
+}
+.title a{
+	font-size: 14px;
+	color: #fff;
+}
+.personal{
+	margin-top: 10px;
+	margin-left: 4px;
+	margin-right: 4px;
+}
+.personal .order_list ,.personal .collect{
+	background: #fff;
+	border: 1px solid #c4c4c4;
+}
+.personal .btn{
+	background: #f65456 !important;
+	border: none;
+}
+.personal a{
+	color: #575757;
+}
+.personal .product_profile{
+	margin: 10px !important;
+}
+.personal .product_profile .img{
+	border: 1px solid #cccccc;
+	padding: 2px!important;
+}
+
+
+/*订单列表*/
+.personal .order_list{
+	margin-bottom: 8px;
+	font-size: 14px;
+}
+.personal .order_list .title{
+	padding: 5px 0;
+	border-bottom:1px solid #e8e9f1;
+}
+.personal .order_list .product_profile .desc .til{
+	margin-bottom: 5px;
+}
+.personal .order_list .product_profile .desc .price{
+	color: #8c8b8b;
+}
+.personal .order_list .edit_btn .pay_ready_bnt{
+	border: 1px solid #f65456;
+	color: #f65456;
+	padding: 5px 10%;
+}
+.personal .order_list .edit_btn .pay_complete_bnt{
+	border: 1px solid #8c8b8b;
+	color: #bebebe;
+	padding: 5px 10%;
+}
+.personal .order_list .edit_btn div{
+	text-align: center;
+	margin-top: 2px;
+	height: 38px;
+	line-height: 38px;
+	border-top:1px solid #e8e9f1;
+}
+
+/*我的收藏*/
+.personal .collect_list{
+	border-bottom:1px solid #e8e9f1;
+}
+.personal .collect_list .desc .price{
+	color: #f65456;
+}
+.title .main .dropdown-menu{
+	background: #141414;
+	filter:alpha(opacity=70);  
+  	-moz-opacity:0.7;  
+  	-khtml-opacity: 0.7;  
+  	opacity: 0.7; 
+}
+.title .main .dropdown-menu li{
+	height: 30px;
+	line-height: 30px;
+	font-size: 12px;
+	text-align: center;
+	border-bottom: 1px solid #888888;
+}
+.personal .collect_list{
+	position: relative;
+}
+.personal .collect_list .product_del{
+	display: none;
+	position: absolute;
+	top: -5px;
+	left: 5px;
+}
+
+/*在线留言*/
+.feedback_content label{
+	width:100%;
+	color: #a4a4a4;
+}
+.feedback_content textarea{
+	width:95%;
+}
+.feedback_phone{
+	margin-top: 20px;
+}
+.feedback_phone label{
+	color: #a4a4a4;
+}
+
+
+
+
+
+
+
+

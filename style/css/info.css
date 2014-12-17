@@ -156,13 +156,45 @@ body{
 }
 .show_msg{
 	padding: 10px;
-	background: #fff;
 	height: 60px;
 	font-size: 14px;
 }
 .show_msg .til{
 	color: #f65456;
 }
+
+/* 选号码 */
+.number .number_til{
+	padding: 10px;
+}
+.number ul{
+
+}
+.number ul li{
+	border: none;
+	background: #f8f8f8;
+	border-top: 1px solid #a4a4a4;
+	border-bottom: 1px solid #a4a4a4;
+	border-right: 1px solid #a4a4a4;
+	padding: 0;
+}
+.number>.nav>li>a{
+	padding: 10px 0;
+	text-align: center;
+}
+.number>.nav-tabs>.active{
+	border-bottom: 2px solid #f65456;
+}
+.number>.nav-tabs>.active a{
+	color: #f65456;
+	padding-bottom: 9px;
+}
+.number .bt_checked{
+	border-top:1px solid #378bff !important;
+}
+
+/*个人中心*/
+
 
 
 

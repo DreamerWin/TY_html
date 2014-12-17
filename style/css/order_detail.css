@@ -23,3 +23,8 @@ body{background: #eee;}
 .orderDetail .contNav{margin-top:16px;background:#fff; border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;}
 .orderDetail .contNav .btn{ width:50%; margin:10px auto; background:#f75457;border-radius:0;padding:8px;border-radius:3px;}
 .orderDetail .contNav .btn span{color:#fff; font-size: 18px;}
+
+/*个人中心*/
+.personal .cont{
+	margin-top: 15px;
+}
