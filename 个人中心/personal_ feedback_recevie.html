@@ -1,0 +1,160 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/personal.css" />
+</head>
+<body>
+
+<div class="container-fluid">
+	<!-- 头部 -->
+	<div class="row header">
+	 	<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>我的留言</span>
+	 	</div>
+	</div>
+	<ul class="row nav nav-tabs" role="tablist" id="myTab">
+	  	<li role="presentation" class="active col-xs-6 text-center nav_recevie">
+	  		<a href="#recevie" role="tab" data-toggle="tab">收到的回复</a>
+  		</li>
+	  	<li role="presentation" class="col-xs-6 text-center nav_publish">
+	  		<a href="#publish" role="tab" data-toggle="tab">发表的留言</a>
+  		</li>
+	</ul>
+	<!-- 内容部分 -->
+	<div class="row">
+		<div class="personal my_feedback">
+		<form class="form-horizontal" role="form">
+		
+		<div class="tab-content">
+			<!-- 收到的回复 -->
+			<div role="tabpanel" class="tab-pane active" id="recevie">
+			<div class="recevie">
+				<div class="feedback_recevie border">
+					<div class="ask">
+						<div class="row li_cnt til">
+							<div class="col-xs-5 text-left">我</div>
+							<div class="col-xs-7 text-right">2014-09-11</div>
+						</div>
+						<div class="row li_cnt cnt">
+							<div class="col-xs-12 text-left">您好！请问我的佣金收款账户能否更改？需要怎么修改？</div>
+						</div>
+					</div>
+					<div class="answer">
+						<div class="row li_cnt til">
+							<div class="col-xs-5 text-left">回复</div>
+							<div class="col-xs-7 text-right">2014-09-12</div>
+						</div>
+						<div class="row li_cnt cnt">
+							<div class="col-xs-12 text-left">可以修改，直接联系财务即可</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feedback_recevie border">
+					<div class="ask">
+						<div class="row li_cnt til">
+							<div class="col-xs-5 text-left">我</div>
+							<div class="col-xs-7 text-right">2014-09-11</div>
+						</div>
+						<div class="row li_cnt cnt">
+							<div class="col-xs-12 text-left">您好！请问我的佣金收款账户能否更改？需要怎么修改？</div>
+						</div>
+					</div>
+					<div class="answer">
+						<div class="row li_cnt til">
+							<div class="col-xs-5 text-left">回复</div>
+							<div class="col-xs-7 text-right">2014-09-12</div>
+						</div>
+						<div class="row li_cnt cnt">
+							<div class="col-xs-12 text-left">可以修改，直接联系财务即可</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+
+			<!-- 发表的留言 -->
+			<div role="tabpanel" class="tab-pane" id="publish">
+			<div class="publish">
+				<div class="feedback_publish border">
+					<div class="ask">
+						<div class="row li_cnt til">
+							<div class="col-xs-5 text-left">我</div>
+							<div class="col-xs-7 text-right">2014-09-11</div>
+						</div>
+						<div class="row li_cnt cnt">
+							<div class="col-xs-12 text-left">您好！请问我的佣金收款账户能否更改？需要怎么修改？</div>
+						</div>
+					</div>
+					<div class="answer">
+						<div class="row li_cnt num">
+							<div class="col-xs-12 text-right"><span style="color:#1277dc">1条回复</span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feedback_publish border">
+					<div class="ask">
+						<div class="row li_cnt til">
+							<div class="col-xs-5 text-left">我</div>
+							<div class="col-xs-7 text-right">2014-09-11</div>
+						</div>
+						<div class="row li_cnt cnt">
+							<div class="col-xs-12 text-left">您好！请问我的佣金收款账户能否更改？需要怎么修改？</div>
+						</div>
+					</div>
+					<div class="answer">
+						<div class="row li_cnt num">
+							<div class="col-xs-12 text-right"><span style="color:#7f7f7f">0条回复</span></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="feedback_publish border">
+					<div class="ask">
+						<div class="row li_cnt til">
+							<div class="col-xs-5 text-left">我</div>
+							<div class="col-xs-7 text-right">2014-09-11</div>
+						</div>
+						<div class="row li_cnt cnt">
+							<div class="col-xs-12 text-left">您好！请问我的佣金收款账户能否更改？需要怎么修改？</div>
+						</div>
+					</div>
+					<div class="answer">
+						<div class="row li_cnt num">
+							<div class="col-xs-12 text-right"><span style="color:#7f7f7f">已回复</span></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			</div>
+			<button type="button" class="btn btn-info">提交留言</button>
+		</div>
+		</form>	
+		</div>
+	</div>
+	
+</div>
+
+<!-- JS部分 -->
+<script>
+$(document).ready(function(){
+	$('#myTab a:first').tab('show');
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body{
+	background: #eee;
+}
+/*分期介绍*/
+.stage{
+	border-bottom: none;
+	margin-top: 15px;
+}
+.stage .radio{
+	margin:0px;
+}
+.stage label{
+	padding-left: 0px;
+}
+.stage ul li{
+	position:relative;
+	border-bottom: 1px solid #e8e9f1;
+}
+.tArrow{
+	height:46px;
+	width:30px; 
+	position:absolute;
+	right:0;
+	top:0;
+	background:url(../img/arrow_right.png)center no-repeat;
+	background-size:8px 12px;
+}
+
+/*分期介绍&关于我们*/
+.stage_introduce,.about_us{
+	margin-top: 15px;
+}
+.til{
+	color: #858585;
+	border-bottom:1px solid #d6d6d6;
+}
+.about_us .show{
+	margin-top: 10px;
+}
+.about_us .show_arrows{
+	height: 20px;
+	background:url(../img/content_show.png)center no-repeat;
+	background-size: 9px 6px;
+}
+.about_us .hide_arrows{
+	height: 20px;
+	background:url(../img/content_hide.png)center no-repeat;
+	background-size: 9px 6px;
+}

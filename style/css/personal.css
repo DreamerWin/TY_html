@@ -113,6 +113,36 @@ body{
 	color: #a4a4a4;
 }
 
+/*我的留言*/
+.my_feedback .feedback_recevie,.my_feedback .feedback_publish{
+	margin-bottom: 15px;
+}
+.my_feedback .til{
+	color: #7f7f7f;
+	padding-bottom: 0;
+}
+.my_feedback .ask{
+	border-bottom: 1px solid #e8e9f1;
+}
+.my_feedback .cnt{
+	padding-top: 0;
+}
+.nav-tabs{
+	background: #fff;
+}
+.nav-tabs a{
+	color: #000;
+}
+.nav-tabs>.active{
+	border-bottom: 1px solid #f65456;
+}
+.nav-tabs>.active>a{
+	color: #f65456 !important;
+	padding-bottom: 9px;
+}
+.nav_recevie{
+	border-right: 1px solid #838383;
+}
 
 
 

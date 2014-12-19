@@ -1,0 +1,26 @@
+/*菜品详情*/
+body{background: #eee;}
+.allianceDetail .cont{background:#fff; border:1px solid #d5d5d5;margin:4px 4px 0;border-radius:2px;}
+.allianceDetail .cont .title{background:#ecf3ff;border-bottom:1px solid #d5d5d5;height:30px;line-height:30px;padding-left:10px;}
+.allianceDetail .cont .title span{font-size:13px;color:#191919;}
+.allianceDetail .cont .top{min-height:82px;padding:10px 0 7px; margin:0 6px; border-bottom:1px dashed #cbcbcb;position:relative;}
+.allianceDetail .cont .top .photo{width:63px;height:63px;border:1px solid #cdcdcd;position:absolute;left:3px;top:10px;}
+.allianceDetail .cont .top .photo img{width:100%;}
+.allianceDetail .cont .top .detail{margin-left:78px;}
+.allianceDetail .cont .top .detail .name span{color:#595959;font-size:12px;}
+.allianceDetail .cont .top .detail .norms{margin-top:3px;}
+.allianceDetail .cont .top .detail .norms span{color:#8c8b8b;font-size:11px;}
+.allianceDetail .cont ul{margin:0 10px;}
+.allianceDetail .cont ul li{min-height:34px;padding:8px 0; border-top:1px solid #ebeff5;}
+.allianceDetail .cont ul li:first-child{border-top:none;}
+.allianceDetail .cont ul li div{font-size:13px;color:#595959;}
+.allianceDetail .cont ul li div span{font-size:11px;color:#838383;}
+.allianceDetail .cont ul li div span b{font-size:12px;color:#f65456;}
+.allianceDetail .cont ul li .num{position:relative;font-family:arial;}
+.allianceDetail .cont ul li .num div{position:absolute;}
+.allianceDetail .cont ul li .num span{padding-left:65px;display:block;}
+.allianceDetail .cont ul li .status{color:#ec9d13;}
+.allianceDetail .pagerNav{border-top:1px solid #d5d5d5;border-bottom:1px solid #d5d5d5;height:60px;background:#fff;margin-top:6px;}
+.allianceDetail .pagerNav .commission{font-size:18px;color:#f65456;font-family:arial;}
+.allianceDetail .pagerNav .pager li>a{padding:0;background-color:none;border:none;border-radius:0;font-size:13px;color:#cccccc;padding:0 10px;}
+.allianceDetail .pager li>a:hover,.allianceDetail .pager li>a:focus{text-decoration: none;background-color:#fff;}

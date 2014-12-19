@@ -2,8 +2,15 @@
 body{background: #eee;}
 .allianceApply{padding-bottom:30px;}
 .allianceApply .text{background:#fff;border:1px solid #d5d5d5;margin:4px 4px 0;}
-.allianceApply .text .top{background:#ecf3ff;border-bottom:1px solid #d5d5d5;height:30px;line-height:30px;padding-left:10px;}
+.allianceApply .text .top{background:#ecf3ff;border-bottom:1px solid #d5d5d5;height:30px;line-height:30px;padding-left:10px;position:relative;}
 .allianceApply .text .top span{font-size:13px;color:#191919;}
+.allianceApply .text .top .revise{position:absolute;top:0;right:10px;color:#368bff;}
+.allianceApply .text .title{border-bottom:1px solid #d5d5d5;height:30px;line-height:30px;padding-left:10px;position:relative;}
+.allianceApply .text .title .status{position:absolute;top:0;right:10px;color:#368bff;}
+.allianceApply .text .info{padding:10px;font-size:13px;position:relative;}
+.allianceApply .text .info .arrowRight{position: absolute;right:0;top:0; height:100%;width:50px;background:url(../img/arrowRight.png) center no-repeat;background-size:13px 22px; }
+.allianceApply .text .info div{margin-top:3px;}
+.allianceApply .text .info div.norms{font-size:12px;color:#aeaeae;}
 .allianceApply .contNav{margin-top:16px;}
 .allianceApply .contNav .btn{ width:95%; margin:10px auto; background:#d1d1d1;border-radius:0;padding:8px;border-radius:3px;}
 .allianceApply .contNav .btn span{color:#fff; font-size: 18px;}
@@ -12,3 +19,4 @@ body{background: #eee;}
 .allianceApply .text .cont .fill_content .li_cnt .form-group label {padding-left: 0px;padding-right: 0px;padding-top: 6px;font-weight: normal;font-size: 14px; color:#aeaeae;}
 .text .cont .fill_content .li_cnt .form-group label span{color:#ff6c71;}
 .allianceApply .text .cont .fill_content .li_cnt .form-group .iCheck{padding-top:5px !important;}
+.form-control[readonly]{background:none;}

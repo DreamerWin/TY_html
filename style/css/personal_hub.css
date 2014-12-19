@@ -1,0 +1,24 @@
+body{
+	background: #eee;
+}
+/*分期介绍*/
+.personalHub .banner{position:relative;}
+.personalHub .banner .logo{position:absolute;top:14px;left:20px; height:65px;width:65px;border-radius:50%;border:2px solid #fff;overflow:hidden;}
+.personalHub .banner .name{position:absolute;top:25px;left:110px; font-size:16px;color:#fff;}
+.personalHub .banner .nameId{position:absolute;top:50px;left:110px; font-size:16px;color:#fff;}
+.personalHub .banner .out{position:absolute;font-size:14px;color:#fff;bottom:50px;right:14px;}
+.personalHub .banner .menu{position:absolute;bottom:0; height:45px;width:100%;background-color:rgba(0,0,0,.3);}
+.personalHub .banner .menu>ul>li{text-align:center;color:#fff;height:20px;border-left:1px solid #fff;margin-top:16px;}
+.personalHub .banner .menu>ul>li:first-child{border-left:none;}
+.personalHub .banner .menu>ul>li .num{margin-top:-10px;}
+.personalHub .banner .menu>ul>li .num .status{height:15px;width:15px;border-radius:50%;background:#fd2424;display:inline-block;}
+.personalHub .border{border-bottom: 1px solid #c4c4c4;}
+.personalHub .border>ul>li{border-top: 1px solid #e8e9f1;border-bottom:none;}
+.personalHub .border>ul>li:first-child{border-top:none;}
+.hub{background: url(../img/icon_hub.png) left center no-repeat;background-size: 22px;}
+.add{background: url(../img/icon_add.png) left center no-repeat;background-size: 22px;}
+.password{background: url(../img/icon_password.png) left center no-repeat;background-size: 22px;}
+.keep{background: url(../img/icon_keep.png) left center no-repeat;background-size: 22px;}
+.leave{background: url(../img/icon_leave.png) left center no-repeat;background-size: 22px;}
+.leave_i{background: url(../img/icon_leave_i.png) left center no-repeat;background-size: 22px;}
+.alliance{background: url(../img/icon_alliance.png) left center no-repeat;background-size: 22px;}

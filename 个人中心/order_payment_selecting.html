@@ -1,0 +1,185 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	
+	<script src="../style/js/bootstrap.min.js"></script>
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/order_payment_selecting.css" />
+</head>
+
+<body>
+<!-- 选择支付方式 -->
+<div class="container-fluid">
+	<div class="header row">
+		<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>选择支付方式</span>
+		</div>
+	</div>
+	<div class="orderPaymentSelecting row">
+		<div class="orderCont">
+			<div class="orderPrompt">
+				<div class="text">
+					<span>订单提交成功，请尽快完成支付！</span>
+				</div>
+				<div class="norms">
+					<span>请您在提交订单后<b>24</b>小时内完成支付，否则订单会自动取消。</span>
+				</div>
+			</div>
+			<ul>
+				<li>
+					<div>订单编号：<span>000998</span></div>
+				</li>
+				<li>
+					<div class="num">
+						<div>分期总额：</div>
+						<span><b>￥3988</b>(含购机价￥1299,含全额话费￥2688)</span>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="title">
+			<span>请选择支付方式：</span>
+		</div>
+		<div class="paymentSelecting row">
+			<ul>
+				<li class="radio">
+					<div class="selecting">
+	  					<label>
+	    					<div class="icon_credit">
+	    						信用卡在线分期
+	    					</div>
+	  					</label>
+					</div>
+					<div class="tArrow"></div>
+					<ul class="list">
+						<li class="payment" value="CGB">
+							<div class="CGB"></div>
+						</li>
+						<li class="payment" value="CMB">
+							<div class="CMB"></div>
+						</li>
+						<li class="payment" value="BOC">
+							<div class="BOC"></div>
+						</li>
+						<li class="payment" value="ABC">
+							<div class="ABC"></div>
+						</li>
+						<li class="payment" value="ICBC">
+							<div class="ICBC"></div>
+						</li>
+						<li class="payment" value="CCB">
+							<div class="CCB"></div>
+						</li>
+					</ul>
+				</li>
+				<li class="radio">
+					<div class="selecting">
+	  					<label>
+	    					<div class="icon_noCredit">
+	    						无信用卡分期
+	    					</div>
+	  					</label>
+					</div>
+					<div class="tArrow"></div>
+					<ul class="list">
+						<li class="payment" value="noCredit">
+							<div class="noCredit">
+								<span>凭身份证+工作证/学生证即可办理</span>
+							</div>
+							<div class="stages">
+								<span>请选择分期期数：</span>
+								<div>24期</div>
+								<div>36期</div>
+							</div>
+						</li>
+					</ul>
+				</li>
+				<li class="radio">
+					<div class="selecting">
+	  					<label>
+	    					<div class="icon_unionpay">
+	    						银联全额支付
+	    					</div>
+	  					</label>
+					</div>
+					<div class="tArrow"></div>
+					<ul class="list">
+						<li class="payment"  value="CUP">
+							<div class="CUP"></div>
+						</li>
+					</ul>
+				</li>
+				<li class="radio">
+					<div class="selecting">
+	  					<label>
+	    					<div class="icon_arrive">
+	    						货到付款<span>(广州市内)-中国工商银行</span>
+	    					</div>
+	  					</label>
+					</div>
+					<div class="tArrow"></div>
+					<ul class="list">
+						<li class="payment" value="arriveCGB">
+							<div class="CGB"></div>
+						</li>
+						<li class="payment" value="arriveCMB">
+							<div class="CMB"></div>
+						</li>
+						<li class="payment" value="arriveBOC">
+							<div class="BOC"></div>
+						</li>
+						<li class="payment" value="arriveABC">
+							<div class="ABC"></div>
+						</li>
+						<li class="payment" value="arriveICBC">
+							<div class="ICBC"></div>
+						</li>
+						<li class="payment" value="arriveCCB">
+							<div class="CCB"></div>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div class="contNav">
+			<div class="text">
+				<div class="num">
+					<span>月供:<b>￥?</b><span>×24</span></span>
+				</div>
+				<div class="norms">
+					<span>(0利息0手续费)</span>
+				</div>
+			</div>
+			<button type="button" class="btn btn-block">
+				<span>去支付</span>
+			</button>
+		</div>
+	</div>
+</div>
+<script type="text/javascript">
+	$(function() {
+		$('li.radio').bind('click',function(){
+			$('label').removeClass('checked') && $(this).find('label').addClass('checked');
+			$('.list').hide() && $(this).find(".list").show();
+			$('.btn').attr('style', 'background:#f75457').bind('click');
+		});
+		$('.payment').bind('click',function(){
+			$(this).addClass('checked').siblings().removeClass('checked');
+		});
+		$('.stages>div').bind('click',function(){
+			$(this).addClass('checked').siblings().removeClass('checked');
+		});
+  	});
+</script>
+</body>

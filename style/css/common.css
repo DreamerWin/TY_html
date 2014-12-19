@@ -134,6 +134,18 @@ a{text-decoration:none;color:#333,display: inline-block;
 	background: none;
 }
 
+/*分期图标*/
+.selecting{margin: 0 30px 0 8px;padding:13px 0;}
+
+.selecting .checked{background:url(../img/payment_radio2.png) left center no-repeat;background-size:16px;}
+.selecting div{padding-left:28px;font-size:13px;color:#595959;line-height: 22px;height: 20px;}
+.selecting div span{font-size:11px; color:#797979;}
+.selecting .icon_credit{background:url(../img/icon_credit.png) left center no-repeat;background-size:20px;}
+.selecting .icon_noCredit{background:url(../img/icon_noCredit.png) left center no-repeat;background-size:20px;}
+.selecting .icon_unionpay{background:url(../img/icon_unionpay.png) left center no-repeat;background-size:20px;}
+.selecting .icon_arrive{background:url(../img/icon_arrive.png) left center no-repeat;background-size:20px;}
+.selecting .icon_about_us{background:url(../img/icon_about_us.png) left center no-repeat;background-size:20px;}
+
 /*分页样式*/
 .footRager .pager{margin: 16px 0;}
 .footRager .pager li>a{border:none;color:#595959;font-size:12px;}
@@ -147,3 +159,24 @@ a{text-decoration:none;color:#333,display: inline-block;
 }
 .arrowsHide{background:url(../img/arrows_hide.png) center no-repeat;background-size:15px 10px;position:absolute;right: 0;top: 0;height:100%;width:40px;}
 .arrowsShow{background:url(../img/arrows_show.png) center no-repeat;background-size:15px 10px;position:absolute;right: 0;top: 0;height:100%;width:40px;}
+
+/*圆圈*/
+.circle_bg{
+	width:20px; 
+	height:20px; 
+	background-color:#F00; 
+	border-radius:10px;
+}
+.circle_cnt{
+	height:20px; 
+	line-height:20px; 
+	display:block; 
+	color:#FFF; 
+	text-align:center
+}
+
+
+
+
+
+

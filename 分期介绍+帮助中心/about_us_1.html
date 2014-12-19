@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/stage_help.css" />
+</head>
+
+<body>
+<!-- 选择支付方式 -->
+<div class="container-fluid">
+	<div class="header row">
+		<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>关于我们</span>
+		</div>
+	</div>
+
+	<div class="row about_us border" >
+		<div class="main" style="height:130px;overflow:hidden">
+			<div class="row li_cnt til">
+				<div class="col-xs-1">
+					<div class="circle_bg" style="">
+				         <span class="circle_cnt" style="">1</span>
+				    </div>
+			    </div>
+			    <div class="col-xs-10">翼分期的介绍</div>
+			</div>
+			<div class="li_cnt cnt">
+				<div class="row">
+					<div class="col-xs-1" ><img src="../style/img/dian.png" /></div>
+					<div class="col-xs-10" style="padding-left:0px;">翼分期商城，广州传飞通讯设备有限公司旗下子品牌，成立于2013年4月。总部坐落于华南电子商务中心。是获得中国电信股份有限公司广东省公司独家授权的手机分期平台。是国内首家提供3c类产品“0利息0手续费”分期支付服务的分期商城。
+	</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-1" ><img src="../style/img/dian.png" /></div>
+					<div class="col-xs-10" style="padding-left:0px;">相较于同类分期商城，翼分期拥有更为严格的产品采购体系。极具竞争力的价格以及完善的配送售后服务，上线至今赢得客户一致好评与信赖。
+	</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-1" ><img src="../style/img/dian.png" /></div>
+					<div class="col-xs-10" style="padding-left:0px;">相翼分期目前已与中国银行、中国工商银行，招商银行，建设银行、农业银行、广发银行6大银行建立深度合作关系，同时携手北银消费金融公司开设“无信用卡分期绿色通道”，为无信用卡或已有信用卡但余额不足的客户解决烦忧。
+	</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row show show_arrows" data="show"></div>
+	</div>
+
+	<div class="row about_us border" >
+		<div class="main" style="height:130px;overflow:hidden">
+			<div class="row li_cnt til">
+				<div class="col-xs-1">
+					<div class="circle_bg" style="">
+				         <span class="circle_cnt" style="">1</span>
+				    </div>
+			    </div>
+			    <div class="col-xs-10">翼分期的介绍</div>
+			</div>
+			<div class="li_cnt cnt">
+				<div class="row">
+					<div class="col-xs-1" ><img src="../style/img/dian.png" /></div>
+					<div class="col-xs-10" style="padding-left:0px;">翼分期商城，广州传飞通讯设备有限公司旗下子品牌，成立于2013年4月。总部坐落于华南电子商务中心。是获得中国电信股份有限公司广东省公司独家授权的手机分期平台。是国内首家提供3c类产品“0利息0手续费”分期支付服务的分期商城。
+	</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-1" ><img src="../style/img/dian.png" /></div>
+					<div class="col-xs-10" style="padding-left:0px;">相较于同类分期商城，翼分期拥有更为严格的产品采购体系。极具竞争力的价格以及完善的配送售后服务，上线至今赢得客户一致好评与信赖。
+	</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-1" ><img src="../style/img/dian.png" /></div>
+					<div class="col-xs-10" style="padding-left:0px;">相翼分期目前已与中国银行、中国工商银行，招商银行，建设银行、农业银行、广发银行6大银行建立深度合作关系，同时携手北银消费金融公司开设“无信用卡分期绿色通道”，为无信用卡或已有信用卡但余额不足的客户解决烦忧。
+	</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row show show_arrows" data="show"></div>
+	</div>
+
+
+</div>
+<script type="text/javascript">
+	$(function() {
+		$('.show_arrows').each(function(){
+			var _this = $(this);
+			_this.click(function(){
+				if(_this.attr('data') == 'show')
+				{
+					_this.prev().css('height','auto');
+					_this.attr('data','hide').addClass('hide_arrows').removeClass('show_arrows');
+				}
+				else
+				{
+					_this.prev().css('height','130px');
+					_this.attr('data','show').addClass('show_arrows').removeClass('hide_arrows');
+				}
+				
+			});
+		});
+  	});
+</script>
+
+
+
+</body>

@@ -1,0 +1,187 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
+	<script src="../style/js/jquery-1.11.1.min.js"></script>
+	<script src="../style/js/bootstrap.min.js"></script>
+	
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/alliance_income.css" />
+
+</head>
+
+<body>
+<!-- 首页 -->
+<div id="myModal" class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm">
+    <div class="modal-content">
+    	<div class="title">温馨提示</div>
+    	<div class="cont">
+    		我们将在订单完结后的第8天(节假日除外)为您结算佣金或提成。如果您的客户在此期间退款，佣金和提成将不作计算。
+    	</div>
+    	<div class="close"></div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+	$('#myModal').modal({
+  keyboard: false
+})
+	$('.close').bind('click',function(){
+		$('#myModal').modal('hide')
+	});
+</script>
+<div class="container-fluid">
+	<div class="header row">
+		<div class="col-xs-3 back"></div>
+	 	<div class="col-xs-6 title">
+			<span>收益查询(20)</span>
+			<span class="bArrow"></span>
+			<div class="menu">
+				<div class="top"></div>
+				<ul>
+					<li>
+						<span>待付款</span>
+						<div class="num">1</div>
+					</li>
+					<li>
+						<span>待发货</span>
+						<div class="num">1</div>
+					</li>
+					<li>
+						<span>待收货</span>
+						<div class="num">1</div>
+					</li>
+					<li>
+						<span>交易成功</span>
+						<div class="num">1</div>
+					</li>
+					<li>
+						<span>配送失败</span>
+						<div class="num">1</div>
+					</li>
+					<li>
+						<span>完成结算</span>
+						<div class="num">1</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="allianceIncome row">
+		<div class="top">
+			<div class="income">预估总收益(元):</div>
+			<div class="num">943.00</div>
+		</div>
+		<ul>
+			<li>
+				<div class="title">
+					<span>订单编号:002200</span>
+				</div>
+				<div class="cont">
+					<div class="logo">
+						<img src="../style/img/65.png"/>
+					</div>
+					<div class="info">
+						<div class="status">
+							<span>订单状态:</span>
+							<span>交易成功</span>
+						</div>
+						<div class="num">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+						<div class="income">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+					</div>
+					<div class="arrowGo"></div>
+				</div>
+			</li>
+			<li>
+				<div class="title">
+					<span>订单编号:002200</span>
+				</div>
+				<div class="cont">
+					<div class="logo">
+						<img src="../style/img/65.png"/>
+					</div>
+					<div class="info">
+						<div class="status">
+							<span>订单状态:</span>
+							<span>交易成功</span>
+						</div>
+						<div class="num">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+						<div class="income">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+					</div>
+					<div class="arrowGo"></div>
+				</div>
+			</li>
+			<li>
+				<div class="title">
+					<span>订单编号:002200</span>
+				</div>
+				<div class="cont">
+					<div class="logo">
+						<img src="../style/img/65.png"/>
+					</div>
+					<div class="info">
+						<div class="status">
+							<span>订单状态:</span>
+							<span>交易成功</span>
+						</div>
+						<div class="num">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+						<div class="income">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+					</div>
+					<div class="arrowGo"></div>
+				</div>
+			</li>
+			<li>
+				<div class="title">
+					<span>订单编号:002200</span>
+				</div>
+				<div class="cont">
+					<div class="logo">
+						<img src="../style/img/65.png"/>
+					</div>
+					<div class="info">
+						<div class="status">
+							<span>订单状态:</span>
+							<span>交易成功</span>
+						</div>
+						<div class="num">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+						<div class="income">
+							<span>订单总额:</span>
+							<span>￥9980.00</span>
+						</div>
+					</div>
+					<div class="arrowGo"></div>
+				</div>
+			</li>
+		</ul>
+	</div>
+</div>
+</body>

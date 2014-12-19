@@ -1,0 +1,11 @@
+/*菜品详情*/
+body{background: #eee;}
+.alliancePolicy{padding-bottom:30px;}
+.alliancePolicy .title{margin:8px 8px 0;background:#fff;border:1px solid #bebebe;height:36px;position:relative;}
+.alliancePolicy .title span:first-child{width:6px;height:6px;border-radius:50%;background:#f75457;display:inline-block;position:absolute;top:15px;left:10px;}
+.alliancePolicy .title span:nth-child(2){font-size:15px;color:#303030;margin-left:23px;line-height: 36px;}
+.alliancePolicy .cont{margin:0 8px;border:1px solid #bebebe; border-top:none;padding:8px;background:#fbfbfb;}
+.alliancePolicy .cont table{background:#fff;width:100%;text-align:center;}
+.alliancePolicy .cont table,.alliancePolicy .cont table td,.alliancePolicy .cont table th{border:1px solid #d6d6d6;}
+.alliancePolicy .cont table tr th{line-height:40px;text-align:center;font-size:13px;color:#f65456;font-weight:normal;}
+.alliancePolicy .cont table tr td{line-height:35px;font-size:13px;color:#676767;}
