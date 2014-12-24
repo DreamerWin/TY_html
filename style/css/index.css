@@ -22,8 +22,8 @@ body{background:#f1f1f1;}
 .index .product ul li:first-child{border-top:none;}
 .index .product ul li .cont{border-left:1px solid #e1e1e1;height:165px;margin:0;padding:0;}
 .index .product ul li .cont:first-child{border-left:none;}
-.index .product ul li .photo{text-align:center;}
-.index .product ul li .photo img{width:70%;}
+.index .product ul li .photo{text-align:center;width:112px;height:112px;margin:0 auto;}
+.index .product ul li .photo img{width:100%;}
 .index .product ul li .text{position:absolute;bottom:5px;text-align:center;width:100%;}
 .index .product ul li .text .textTitle{margin:0 6px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
 .index .product ul li .text .textTitle span{font-size:11px;color:#5d5b5b;}

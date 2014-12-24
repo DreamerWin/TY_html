@@ -12,8 +12,8 @@ a{text-decoration:none;color:#333,display: inline-block;
 	border: 1px solid #c4c4c4;
 }
 /*header*/
-.header{height:45px;line-height:45px;background:#368bff;text-align:center;}
-.header .title span{color:#fff;font-size:16px;}
+.header{height:45px;background:#368bff;text-align:center;}
+.header .title span{color:#fff;font-size:16px;display:block;padding-top:12px;}
 .header .register{ color:#fff; text-align:right;}
 .header .register span{font-size:14px;}
 .header .back{height: 100%;background:url(../img/arrowLeft.png) 15px center no-repeat;background-size:10px 19px;}

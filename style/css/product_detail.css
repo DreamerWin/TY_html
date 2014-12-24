@@ -2,20 +2,12 @@
 body{background: #eee;}
 .productDetail{padding-bottom:30px;}
 .productDetail .tabNav{height:44px;border-bottom:1px solid #cbcbcb; background:#fff;}
-.productDetail .tabNav .btn-link{color:#838383;height:44px;padding: 10px 0;text-align:center;}
-.productDetail .tabNav .btn-link span{font-size:14px;border-left:1px solid #b8b8b8;display:block;}
-.productDetail .tabNav .btn-link:first-child span{border-left:none;}
+.productDetail .tabNav .btn-link{height:44px;padding: 10px 0;text-align:center;}
+.productDetail .tabNav .btn-link a{font-size:14px;border-left:1px solid #b8b8b8;display:block;color:#838383;}
+.productDetail .tabNav .btn-link:first-child a{border-left:none;}
 .productDetail .btn-link:hover, .productDetail .btn-link:focus{color:#f45456;text-decoration:none;border-bottom:2px solid #f45456;}
+.productDetail .btn-link a:hover, .productDetail .btn-link a:focus{text-decoration:none;}
 .productDetail .productCont{background:#fff;border-bottom:1px solid #D5D5D5;}
-.slider-pro {position:relative;	margin:0 auto;}
-.sp-mask {	position:relative;	overflow:hidden;padding-top: 20px;height:245px !important;}
-.sp-slide {	position:absolute;}
-.sp-buttons {	position:relative;	width:100%;	text-align:center;}
-.sp-button {width:6px;	height:6px;	border-radius:50%;	margin:4px;	display:inline-block;	cursor:pointer;	background-color:#dcd8d9;}
-.sp-selected-button {background-color:#398dfe;}
-.shopAdPoint {width: 100%;bottom: 6px;text-align: center;}
-.shopAdPoint span {padding: 3px;margin-right: 6px;background-color: #dcdcdc;border-radius: 3px;font-size: 0;}
-.shopAdPoint span.over{background-color: #398dfe;}
 .productDetail .productCont .productText{margin:8px 10px;}
 .productDetail .productCont .productText .numTitle .price{font-size:15px;color:#f65467;font-family:arial;}
 .productDetail .productCont .productText .numTitle .label{background:#378bff;color:#fff;font-weight:normal;padding:0 5px;line-height:18px; display:inline-block; position:relative;margin-left:15px;border-radius:0;}
@@ -52,4 +44,8 @@ body{background: #eee;}
 .productDetail .contNav .btn{ width:65%; margin:10px 10px 10px auto; background-color:#f65456;border-radius:0;padding:8px;border-radius:3px;}
 .productDetail .contNav .btn span{color:#fff; font-size: 18px;}
 .productDetail .contNav .collect{background:url(../img/collect.png) center no-repeat;background-size:22px;height:40px;width:60px; border-right:1px solid #a9a9a9;position:absolute;top:12px;}
+.carousel{margin-top:10px;padding-bottom:20px;}
+.carousel-indicators{bottom:-10px;}
+.carousel-indicators>li{width:8px;height:8px;border:none;background:#dbd9da;margin:0;}
+.carousel-indicators>li.active{width:8px;height:8px;border:none;background:#3a88ff;}
 

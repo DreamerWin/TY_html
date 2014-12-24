@@ -1,12 +1,5 @@
-/*菜品详情*/
-body{background: #fff;}
-.productEvaluate{padding-bottom:30px;}
-.productEvaluate .tabNav{height:44px;border-bottom:1px solid #cbcbcb; background:#fff;}
-.productEvaluate .tabNav .btn-link{color:#838383;height:44px;padding: 10px 0;text-align:center;}
-.productEvaluate .tabNav .btn-link span{font-size:14px;border-left:1px solid #b8b8b8;display:block;}
-.productEvaluate .tabNav .btn-link:first-child span{border-left:none;}
-.productEvaluate .btn-link:hover, .productEvaluate .btn-link:focus{color:#f45456;text-decoration:none;border-bottom:2px solid #f45456;}
-.productEvaluate .evaluateRatio{position:relative;margin-top:14px;}
+.productEvaluate{background:#fff;padding-bottom:30px;}
+.productEvaluate .evaluateRatio{position:relative;margin-top:14px;margin:10px;}
 .productEvaluate .evaluateRatio .ratio{position:absolute;left:10px;top:0;}
 .productEvaluate .evaluateRatio .ratio .num{position:relative;}
 .productEvaluate .evaluateRatio .ratio .num>span:first-child{font-size:40px;line-height:40px; color:#f65467;padding-right:20px;}

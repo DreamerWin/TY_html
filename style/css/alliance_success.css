@@ -1,0 +1,12 @@
+/*菜品详情*/
+body{background: #eee;}
+.allianceSuccess .cont{background:#fff; border:1px solid #d5d5d5;margin:3px 3px 0;border-radius:2px;}
+.allianceSuccess .cont .orderPrompt .text{padding-left:21px;margin:18px 8px 14px; background:url(../img/orderComplete_success.png) left 2px no-repeat;background-size:15px;}
+.allianceSuccess .cont .orderPrompt .text span{font-size:14px;color:#378bff;}
+.allianceSuccess .cont .numCont{height:170px;margin:0 8px;border-top:1px solid #d5d5d5;border-bottom:1px dashed #d5d5d5;}
+.allianceSuccess .cont .numCont .pen{margin:18px auto;width:110px;height:110px; border:6px solid #ffdad0; border-radius:50%; background:#fe8464;color:#fff;text-align:center;}
+.allianceSuccess .cont .numCont .pen .num{font-size:24px;margin-top:25px;}
+.allianceSuccess .cont .numCont .pen .text{font-size:14px;}
+.allianceSuccess .cont .contNav{margin:10px 60px 25px; }
+.allianceSuccess .cont .contNav button{border:1px solid #e5e5e5;background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #f9f9f9), color-stop(1, #eeeeee));}
+.allianceSuccess .cont .contNav button span{font-size:14px; color:#595959;}

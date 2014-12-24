@@ -7,61 +7,47 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0, initial-scale=1.0, user-scalable=no"><!--禁止缩放-->
-	
 	<script src="../style/js/jquery-1.11.1.min.js"></script>
 	<script src="../style/js/bootstrap.min.js"></script>
-
+	<script src="../style/js/icheck/icheck.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="../style/js/icheck/flat/blue.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap.min.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/bootstrap-theme.min.css" />
 	<link rel="stylesheet" type="text/css" href="../style/css/common.css" />
-	<link rel="stylesheet" type="text/css" href="../style/css/personal.css" />
+	<link rel="stylesheet" type="text/css" href="../style/css/alliance_success.css" />
 </head>
+
 <body>
 
+<!-- 分类页面 -->
 <div class="container-fluid">
-	<!-- 头部 -->
-	<div class="row header">
-	 	<div class="col-xs-3 back"></div>
+	<div class="header row">
+		<div class="col-xs-3"></div>
 	 	<div class="col-xs-6 title">
-			<span>在线留言</span>
-	 	</div>
+			<span>注册成功</span>
+		</div>
+		<div class="col-xs-3"></div>
 	</div>
-	<!-- 内容部分 -->
-	<div class="row">
-		<div class="personal">
-		<form class="form-horizontal" role="form">
-
-			<div class="feedback_content border">
-				<div class="form-group li_cnt">
-				    <label for="feedback_content" style="">请输入您的问题:</label>
-				    <textarea name="feedback_content"></textarea>
+	<div class="allianceSuccess row">
+		<div class="cont">
+			<div class="orderPrompt">
+				<div class="text">
+					<span>您的订单已提交成功,我们会尽快与您联系!</span>
 				</div>
 			</div>
-
-			<div class="feedback_phone border">
-				<div class="form-group li_cnt">
-				    <label for="feedback_phone" style="">手机号码:</label>
-				    <input type="text" name="feedback_phone" />
+			<div class="numCont">
+				<div class="pen">
+					<div class="num">000881</div>
+					<div class="text">个人工号</div>
 				</div>
 			</div>
-
-
-			
-			<button type="button" class="btn btn-info">提交留言</button>
-		</form>	
+			<div class="contNav">
+				<button type="button" class="btn btn-block">
+					<span>马上进入翼联盟</span>
+				</button>
+			</div>
 		</div>
 	</div>
-	
 </div>
-
-<!-- JS部分 -->
-<script>
-$(document).ready(function(){
-  $('input').iCheck({
-    checkboxClass: 'icheckbox_flat-blue',
-    radioClass: 'iradio_flat-blue'
-  });
-});
-</script>
 </body>
 </html>

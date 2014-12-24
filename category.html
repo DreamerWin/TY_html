@@ -29,101 +29,189 @@
 		<div class="col-xs-3 rightNav"></div>
 	</div>
 	<div class="category">
-		<div class="tabNav row">
-			<div class="col-xs-3 btn-link">
-				<span>合约单机</span>
-			</div>
-			<div class="col-xs-3 btn-link">
-				<span>合约双机</span>
-			</div>
-			<div class="col-xs-3 btn-link">
-				<span>裸机列表</span>
-			</div>
-			<div class="col-xs-3 btn-link">
-				<span>电脑办公</span>
-			</div>
-		</div>
-		<div class="private row">
-			<ul>
-				<li>
-					<div class="photo">
-						<img src="img/1.jpg"/>
-					</div>
-					<div class="detail">
-						<div class="title">
-							<span>小米1S</span>
-						</div>
-						<div class="explain">
-							<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
-						</div>
-						<div class="price">
-							<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
-							<div class="buy">
-								<span>购机价:￥980</span>
+		<ul class="tabNav row" role="tablist" id="myTab">
+			<li role="presentation" class="col-xs-3 btn-link active">
+				<a href="#aloneMobile" role="tab" data-toggle="tab">合约单机</a>
+			</li>
+			<li role="presentation" class="col-xs-3 btn-link">
+				<a href="#twoMobile" role="tab" data-toggle="tab">合约双机</a>
+			</li>
+			<li  class="col-xs-3 btn-link">
+				<a href="#Mobile" role="tab" data-toggle="tab">裸机列表</a>
+			</lirole="presentation">
+			<li class="col-xs-3 btn-link">
+				<a href="#officePC" role="tab" data-toggle="tab">电脑办公</a>
+			</li>
+		</ul>
+		<div class="tab-content">
+			<!-- 单机 -->
+			<div role="tabpanel" class="tab-pane active" id="aloneMobile">
+				<div class="private row">
+					<ul>
+						<li>
+							<div class="photo">
+								<img src="style/img/1.jpg"/>
 							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="photo">
-						<img src="img/1.jpg"/>
-					</div>
-					<div class="detail">
-						<div class="title">
-							<span>小米1S</span>
-						</div>
-						<div class="explain">
-							<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
-						</div>
-						<div class="price">
-							<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
-							<div class="buy">
-								<span>购机价:￥980</span>
+							<div class="detail">
+								<div class="title">
+									<span>小米1S</span>
+								</div>
+								<div class="explain">
+									<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
+								</div>
+								<div class="price">
+									<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
+									<div class="buy">
+										<span>购机价:￥980</span>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="photo">
-						<img src="img/1.jpg"/>
-					</div>
-					<div class="detail">
-						<div class="title">
-							<span>小米1S</span>
-						</div>
-						<div class="explain">
-							<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
-						</div>
-						<div class="price">
-							<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
-							<div class="buy">
-								<span>购机价:￥980</span>
+						</li>
+						<li>
+							<div class="photo">
+								<img src="style/img/1.jpg"/>
 							</div>
-						</div>
-					</div>
-				</li>
-				<li>
-					<div class="photo">
-						<img src="img/1.jpg"/>
-					</div>
-					<div class="detail">
-						<div class="title">
-							<span>小米1S</span>
-						</div>
-						<div class="explain">
-							<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
-						</div>
-						<div class="price">
-							<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
-							<div class="buy">
-								<span>购机价:￥980</span>
+							<div class="detail">
+								<div class="title">
+									<span>小米1S</span>
+								</div>
+								<div class="explain">
+									<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
+								</div>
+								<div class="price">
+									<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
+									<div class="buy">
+										<span>购机价:￥980</span>
+									</div>
+								</div>
 							</div>
-						</div>
-					</div>
-				</li>
-			</ul>
+						</li>
+						<li>
+							<div class="photo">
+								<img src="style/img/1.jpg"/>
+							</div>
+							<div class="detail">
+								<div class="title">
+									<span>小米1S</span>
+								</div>
+								<div class="explain">
+									<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
+								</div>
+								<div class="price">
+									<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
+									<div class="buy">
+										<span>购机价:￥980</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!-- 双机 -->
+			<div role="tabpanel" class="tab-pane" id="twoMobile">
+				<div class="private row">
+					<ul>
+						<li>
+							<div class="photo">
+								<img src="style/img/2.jpg"/>
+							</div>
+							<div class="detail">
+								<div class="title">
+									<span>ipnone1S</span>
+								</div>
+								<div class="explain">
+									<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
+								</div>
+								<div class="price">
+									<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
+									<div class="buy">
+										<span>购机价:￥980</span>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<div class="photo">
+								<img src="style/img/2.jpg"/>
+							</div>
+							<div class="detail">
+								<div class="title">
+									<span>ipnone1S</span>
+								</div>
+								<div class="explain">
+									<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
+								</div>
+								<div class="price">
+									<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
+									<div class="buy">
+										<span>购机价:￥980</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--裸机 -->
+			<div role="tabpanel" class="tab-pane" id="Mobile">
+				<div class="private row">
+					<ul>
+						<li>
+							<div class="photo">
+								<img src="style/img/65.png"/>
+							</div>
+							<div class="detail">
+								<div class="title">
+									<span>裸机裸机</span>
+								</div>
+								<div class="explain">
+									<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
+								</div>
+								<div class="price">
+									<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
+									<div class="buy">
+										<span>购机价:￥980</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<!--电脑办公 -->
+			<div role="tabpanel" class="tab-pane" id="officePC">
+				<div class="private row">
+					<ul>
+						<li>
+							<div class="photo">
+								<img src="style/img/1.jpg"/>
+							</div>
+							<div class="detail">
+								<div class="title">
+									<span>电脑办公</span>
+								</div>
+								<div class="explain">
+									<span>兼容移动啥啥啥网和啥网，送啥啥啥那个东西</span>
+								</div>
+								<div class="price">
+									<div div class="installment">月供:<b>￥128</b><span>x24</span></div>
+									<div class="buy">
+										<span>购机价:￥980</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
+<script>
+$(document).ready(function(){
+	$('#myTab a:first').tab('show');
+});
+</script>
 </body>
 </html>
